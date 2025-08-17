@@ -1,0 +1,226 @@
+\documentclass{article}
+
+
+\usepackage{PRIMEarxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+
+\input{preamble.tex}
+\usepackage[leftcaption]{sidecap}
+\input{mathcommand.tex}
+%Header
+\pagestyle{fancy}
+\thispagestyle{empty}
+\rhead{ \textit{ }} 
+
+\graphicspath{{media/}}     % organize your images and other figures under media/ folder
+
+% Update your Headers here
+\fancyhead[LO]{Nonlinear absorption}
+% \fancyhead[RE]{Firstauthor and Secondauthor} % Firstauthor et al. if more than 2 - must use \documentclass[twoside]{article}
+
+\usepackage{stmaryrd}
+
+\usepackage{csquotes}
+\makeatletter
+\patchcmd{\csq@bquote@i}{{#6}}{{\emph{#6}}}{}{}
+\makeatother
+\renewcommand{\mkbegdispquote}[2]{\itshape}
+  
+%% Title
+\title{Nonlinear Absorptions on Quantum Well configurations
+%%%% Cite as
+%%%% Update your official citation here when published 
+\thanks{\textit{\underline{Citation}}: 
+\textbf{Authors. Title. Pages.... DOI:000000/11111.}} 
+}
+
+\author{
+  Bui Gia Khanh\\
+   Researcher \\
+  Department of Physics, Hanoi University of Science \\
+  Hanoi, Vietnam\\
+  \texttt{fujimiyaamane@outlook.com} \\
+  %% examples of more authors
+   \AND
+  Nguyen Duc Phung \\
+   Researcher \\
+   Department of Physics, Hanoi University of Science \\
+  Hanoi, Vietnam\\
+  \texttt{email@email} \\
+  \And 
+  Duong Ngoc Khoa \\
+   Researcher \\
+   Department of Physics, Hanoi University of Science \\
+  Hanoi, Vietnam \\
+  \texttt{email@email} 
+  %% \And
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+  %% \And
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+}
+
+\newcommand{\veck}{{\vec{k}_{\perp}}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    Here, we present the analysis of half-parabolic, asymmetric, finite, additive quantum well with the presence of a uniform electric field of perpendicular sectioning in the $z$-axis.   
+\end{abstract}
+
+\section{Introduction}
+Our quantum system is concerned of the quantum well: 
+\begin{equation}\label{eq:quantum_well_main_1}
+    V(z)=\begin{cases}
+        V_{0} & x \leq L_{1} \\
+        \frac{1}{2}m_{{e}}\omega_{z}^{2}z^{2}+ \frac{\hbar^{2}\beta_{z}}{2m_{e}z^{2}} + V_{ext}(z) & L_{1} < x < L_{2}\\
+        V_{0} & x \geq L_{2}
+    \end{cases}
+\end{equation}
+Where $\omega_{z}$ is the angular momenta of the electron in the $z$-direction, $m_{e}$ the rest mass, $\hbar$ as Planck reduced constant, $\beta_{z}$ is the intrinsic constant of the quantum well configuration, and $V_{ext}(z)$ the external electric field of uniform polarized strength in the same dimension. The goal of the main research is then to analyse the nonlinear absorption coefficient of strong electromagnetic waves for electrons confined in an asymmetric finite semi-parabolic quantum well with resonance in the presence of electric fields. Of such, successive operations and formulation will be extensively expressed. 
+\section{Quantum well}
+A \textbf{quantum well}, is a type of constrain that reduce a system of three-dimensional free charge into a two-dimension free-motion system. This is the act of dimensional reduction of specific microscopic matter, which is then called \textit{low-dimensional system}. This is ultimately used for modelling structures of quantum scale, for example, a system of semiconductor (\textsf{GaAs} quantum semiconductor system). The quantum well in equation~\ref{eq:quantum_well_main_1} is one of such quantum well, restricting on the $z$-axis only, leaving the other two dimension free of particle. 
+
+In our above well, we notice that it models the factors: 
+\begin{equation}
+    V_{1}(z)=\frac{1}{2} m_{{e}}\omega_{z}^{2}z^{2},\quad V_{2}(z)=\frac{\hbar^{2}\beta_{z}}{2m_{e}z^{2}},\quad V_{3}(z) = V_{ext}(z)
+\end{equation}
+where $V_{1}$ is the half-parabolic (by the coordinate of the range $[L_{1},L_{2}]$), antisymmetric potential, which model a saddle point of potential (simulating some imperfect electron-pulling region), $V_{2}$ simulates the smoothing version of the normal square well, by adding reduction on the scale of inverse-square law (factor $1/z^{2}$), and $V_{3}$ for external field potential. 
+\section{Quantum well without external field}
+For equation~\ref{eq:quantum_well_main_1}, its energy spectrum can be calculated for the external electrical field. If such external field is ruled out, so $V_{\mathrm{ext}}(z)=0$, then 
+\begin{equation}\label{eq:quantum_well_main_2}
+    V(z)=\frac{1}{2}m_{{e}}\omega_{z}^{2}z^{2}+ \frac{\hbar^{2}\beta_{z}}{2m_{e}z^{2}} 
+\end{equation}
+The Schrödinger equation for time-independent, assuming separable solution as always is then:
+\begin{equation}
+    -\frac{\hbar^{2}}{2m_{e}} \frac{\partial^{2}}{\partial z^{2}} \phi_{n}(z) + V(z)\phi_{n}(z) = E\phi_{n}(z)
+\end{equation}
+which is written as we change to the final state of $V(z)$:
+\begin{equation}
+    -\frac{\hbar^{2}}{2m_{e}} \frac{\partial^{2}}{\partial z^{2}} \phi_{n}(z) + \left[\frac{1}{2}m_{{e}}\omega_{z}^{2}z^{2}+ \frac{\hbar^{2}\beta_{z}}{2m_{e}z^{2}}\right]\phi_{n}(z) = E\phi_{n}(z)
+\end{equation}
+This equation is reserved for the $z$-axis, every other axis can be resolved using the free-particle case. The solution to such problem gives the wavefunction: 
+\begin{equation}
+    \phi_{n}(z) = A_{n}z^{2s}\exp{\left(-\frac{z^{2}}{2\alpha_{z}^{2}}\right)}L^{\delta}_{n}\left(\frac{z^{2}}{\alpha_{z}^{2}}\right)
+\end{equation}
+where $L^{\delta}_{n}$ are Legendre polynomials, with the following constants: 
+\begin{equation}
+    s=\frac{1}{4}\left(1+\sqrt{1+4\beta_{z}}\right), \quad \delta = 2s - \frac{1}{2}, \quad \alpha_{z} = \sqrt{\frac{\hbar}{m_{e}\omega_{z}}}
+\end{equation}
+Here, the constant $A_{0}$ is just the normalization constant. Hence, it must satisfy: 
+\begin{equation}
+    A_{n}^{2} \int_{0}^{L} \left[z^{2s}\exp{\left(-\frac{z^{2}}{2\alpha_{z}^{2}}\right)}L^{\delta}_{n}\left(\frac{z^{2}}{\alpha_{z}^{2}}\right)\right]^{2} \: dz = 1
+\end{equation}
+
+The ground and first initial state of this wavefunction is 
+\begin{align}
+    \phi_{0}(z) & = A_{0}z^{2s}\exp{\left(-\frac{z^{2}}{2\alpha^{2}_{z}}\right)} \\
+    \phi_{1}(z) & = A_{1} z^{2s}\exp{\left( -\frac{z^{2}}{2\alpha^{2}_{z}} \right)} \left(-\frac{z^{2}}{\alpha_{z}^{2}}+\gamma + 1\right)
+\end{align}
+which has normalization constant using such calculation being 
+
+\begin{align}
+    A_{0} & = \sqrt{2}\alpha_{z}^{-1/2-2s} \left[\Gamma \left(\frac{1}{2}+2s\right), \Gamma\left(\frac{1}{2}+2s, \frac{L^{2}}{\alpha_{z}^{2}}\right)\right]^{-1/2}\\
+    A_{1} & = 2\sqrt{2} \alpha_{z}^{-1/2-2s} \left\{ \left[2+4\gamma^{2}+\gamma(4-16s)+16s^{2}\right] \Gamma\left(\frac{1}{2}+2s\right)- T_{1} - T_{2}\right\}
+\end{align}
+for the two terms $T_{1},T_{2}$ being
+\begin{equation}
+    T_{1} = 4(1+\gamma)^{2} \Gamma\left(\frac{1}{2}+2s, \frac{L^{2}}{\alpha_{z}^{2}}\right) + \gamma(1+\gamma) \Gamma \left(\frac{3}{2}+2s, \frac{L^{2}}{\alpha_{z}^{2}}\right)
+\end{equation}
+and 
+\begin{equation}
+    T_{2} = 4\Gamma \left(\frac{3}{2}+2s, \frac{L^{2}}{\alpha_{z}^{2}} \right)
+\end{equation}
+
+The energy spectrum of the quantum well is then calculated as 
+\begin{equation}
+    \mathcal{E} = \hbar \omega_{z} \left( 2n+1 + \frac{1}{2}\sqrt{1+4\beta_{z}} \right)
+\end{equation}
+which reduces to $\hbar\omega_{z}(2n+3/2)$ when $\beta_{z}\to 0$. 
+
+\section{Absorption of electromagnetic waves}
+
+\subsection{Hamiltonian of an electromagnetic - phonon interaction in quantum well}
+
+To start with the analysis, we need some formulations of the interaction of electron, phonon and external electrical field within the confinement of the quantum well. This can be separated to three operators interactions: external electric field interaction, non-interacting phonon interaction, and electron-phonon interaction. 
+
+Call $z$ the space spatial axis being quantized, the Hamiltonian for the electromagnetic-phonon interaction in the quantum well when there exists external electric field $\vec{E}(t)=\vec{E}_{0}\sin{(\Omega t)}$ as 
+
+\begin{align}
+    \mathcal{H}& = \underbrace{\sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right)a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} }_{\text{external field}} \\ 
+    & \underbrace{\quad + \sum_{\vec{q}} \hbar \omega_{0} b_{\vec{q}}^{+} b_{\vec{q}}}_{\text{non-interacting phonons} } \\
+    & \underbrace{\quad + \sum_{\vec{q}} \sum_{n,n', \vec{k}_{\perp}} C_{\vec{q}} I_{n,n'}(q_{z}) a^{+}_{n',\vec{k}_{\perp}+\vec{q}} a_{n,\vec{k}_{\perp}} \left(b_{\vec{q}} + b^{+}_{- \vec{q}}\right)}_{\text{electron-phonon }}
+\end{align}
+with $\mathcal{E}_{n}$ is the energy of the electron, $\vec{k}_{\perp}, \vec{q}$ are the vectors of electron and phonon in the system respectively, $\ket{n; \vec{k}_{\perp}}$, $\bra{n;\vec{k}_{\perp}+\vec{q}}$ being the system's electron state before and after the scattering interaction of the system. For the external field, which is considered orthogonal, $\vec{A}(t)$ is expressed as the electrical potential 
+\begin{equation}
+    -\frac{1}{c} \frac{d}{dt} \vec{A}(t) = \vec{E}_{0}\sin{(\Omega t)},\quad  \vec{A}(t) = \frac{c}{r} \vec{E}_{0}\cos{(\omega t )}
+\end{equation}
+$I_{n,n'}(q_{z})$ is the electronic form factor of the heterogenous, constituent superlattice - in our case of quantum well is a special case. This is usually expressed as 
+\begin{equation}
+    I_{n,n'}(q_{z}) \int_{0}^{N_{d}} \Psi^{*}_{n}(z) \Psi_{n'}(z)\exp{(iq_{z}z)}\: dz = \frac{2}{L} \int_{0}^{L} \Psi^{*}_{n}(z)\Psi_{n'}(z)\exp{(iq_{z}z)}\: dz
+\end{equation}
+in which $2/L$ is the intrinsic normalization factor for the special case of a quantum well. Energy spectrum $\mathcal{E}_{n}(\vec{k}_{\perp})$ here is expressed by 
+\begin{equation}
+    \mathcal{E}_{n}(\vec{k}_{\perp}) = \frac{\hbar^{2}}{2m^{*}} \left( k_{\perp}^{2} + k_{z}^{n^{2}} \right) = \hbar \Omega_{B} \left(N + \frac{1}{2}\right) + \left(\frac{\hbar^{2}}{2m^{*}} \frac{\pi^{2}n^{2}}{L^{2}}\right)
+\end{equation}
+where $\Omega_{B}=(eB)/(m^{*}c)$ is the cyclotron frequency of the external field. 
+
+To proceed with investigating the quantum effect and motions of the system given the above Hamiltonian, we will use the following commutative operator between the observable operators in the Hamiltonian, such as the following: 
+\begin{align}
+    \{ a_{i} ; a_{k}^{+} \} &= a_{i}a_{k}^{+} + a^{+}_{k}a_{i} = \delta_{ik} \\
+    \{ a_{i}^{+} ; a_{k}^{+} \} & = \{ a_{i}; a_{k} \} = 0 \\
+    \{ b_{i} , b_{k}^{+} \} & = b_{i}b^{+}_{k} - b_{k}^{+}b_{i} = \delta_{ik} \\
+    \{ b_{i}^{+}; b_{k}^{+} \} &= \{b_{i} ; b_{k}\} = 0
+\end{align}
+\subsection{Momentum operator solution}
+
+To investigate further of the interaction in the quantum well as well as constructing quantum-mechanical expression, we use the momentum operator expression for \textbf{particle number operator}. We have the following: 
+\begin{align}
+    i \hbar \frac{\partial f_{n, k_{\perp}}(t)}{\partial t} = \left\langle \left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; H \right] \right\rangle, \quad \quad f_{n, k_{\perp}} = \left\langle a^{+}_{n,\vec{k}_{\perp}} ; a_{n,\vec{k}_{\perp}} \right\rangle
+\end{align}
+
+Applying this for the first term (external force interaction): 
+\begin{align}
+    \left\langle \left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; H_{1} \right] \right\rangle & = \left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right)a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} \right] \\
+    & = \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right)\left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} \right]\\
+    & = S_{1}
+\end{align}
+Consider the commutator $\left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} \right]$, we have 
+\begin{equation}
+    \left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} \right] = a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}'_{\perp}} \delta_{\vec{k}_{\perp},\vec{k}'_{\perp}} - a^{+}_{n,\vec{k}'_{\perp}} a_{n,\vec{k}_{\perp}} \delta_{\vec{k}'_{\perp},\vec{k}_{\perp}}
+\end{equation}
+
+Thereby, for the Kronecker delta being 
+
+\begin{align}
+    S_{1}
+    &= \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right) \left(a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}'_{\perp}} \delta_{\vec{k}_{\perp},\vec{k}'_{\perp}} - a^{+}_{n,\vec{k}'_{\perp}} a_{n,\vec{k}_{\perp}} \delta_{\vec{k}'_{\perp},\vec{k}_{\perp}}\right)\\
+    & = \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right) a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}'_{\perp}} \delta_{\vec{k}_{\perp},\vec{k}'_{\perp}} - \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right) a^{+}_{n,\vec{k}'_{\perp}} a_{n,\vec{k}_{\perp}} \delta_{\vec{k}'_{\perp},\vec{k}_{\perp}}\\
+    & = \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right)a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}'_{\perp}} - \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right) a^{+}_{n,\vec{k}'_{\perp}} a_{n,\vec{k}_{\perp}}\\
+    & = 0
+\end{align}
+
+For the second term, we do the same operation:
+
+\begin{align}
+    S_{2} & = \left[ a^{+}_{n,\vec{k}_{\perp}}a_{n,\vec{k}_{\perp}} ; \sum_{\vec{q}} \hbar \omega_{\vec{q}} b^{+}_{\vec{q}}b_{\vec{q}} \right] \\
+    & = \hbar \sum_{\vec{q}} \omega_{\vec{q}} \left[ a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}}; b^{+}_{\vec{q}}b_{\vec{q}} \right] \\
+    & = 0
+\end{align}
+
+
+
+\end{document}
