@@ -557,10 +557,6 @@ INPUT D:\MikTek\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmbc8t.tfm
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmri8t.tfm
-INPUT D:\MikTek\tex\latex\psnfss\t1phv.fd
-INPUT D:\MikTek\tex\latex\psnfss\t1phv.fd
-INPUT D:\MikTek\tex\latex\psnfss\t1phv.fd
-INPUT D:\MikTek\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmrc8t.vf
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmr8r.tfm
@@ -577,8 +573,6 @@ INPUT D:\MikTek\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmb8t.vf
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmri8t.vf
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT D:\MikTek\fonts\vf\adobe\helvetic\phvr8t.vf
-INPUT D:\MikTek\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmri8t.vf
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmr8t.vf
@@ -620,8 +614,6 @@ INPUT D:\MikTek\fonts\type1\public\amsfonts\symbols\msbm7.pfb
 INPUT D:\MikTek\fonts\type1\public\amsfonts\symbols\msbm7.pfb
 INPUT D:\MikTek\fonts\type1\public\cm-super\sftt1000.pfb
 INPUT D:\MikTek\fonts\type1\public\cm-super\sftt1000.pfb
-INPUT D:\MikTek\fonts\type1\public\urw-base35\uhvr8a.pfb
-INPUT D:\MikTek\fonts\type1\public\urw-base35\uhvr8a.pfb
 INPUT D:\MikTek\fonts\type1\public\urw-base35\utmb8a.pfb
 INPUT D:\MikTek\fonts\type1\public\urw-base35\utmb8a.pfb
 INPUT D:\MikTek\fonts\type1\public\urw-base35\utmr8a.pfb
