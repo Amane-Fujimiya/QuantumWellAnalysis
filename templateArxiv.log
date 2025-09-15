@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.17)  3 SEP 2025 13:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.17)  15 SEP 2025 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1191,7 +1191,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 [3]
 
-[4] (templateArxiv.aux)
+[4]
+
+[5]
+
+[6]
+
+[7]
+
+[8]
+
+[9] (templateArxiv.aux)
  ***********
 LaTeX2e <2025-06-01>
 L3 programming layer <2025-05-26>
@@ -1200,17 +1210,17 @@ Package rerunfilecheck Info: File `templateArxiv.out' has not changed.
 (rerunfilecheck)             Checksum: BAF5DCFED96B5DDC47D5B172EA077FA0;1522.
  ) 
 Here is how much of TeX's memory you used:
- 63258 strings out of 468187
- 1551961 string characters out of 5448667
- 2400162 words of memory out of 5000000
- 90787 multiletter control sequences out of 15000+600000
- 687538 words of font info for 206 fonts, out of 8000000 for 9000
+ 63276 strings out of 468187
+ 1552187 string characters out of 5448667
+ 2416162 words of memory out of 5000000
+ 90791 multiletter control sequences out of 15000+600000
+ 687928 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  121i,18n,124p,1242b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/MikTek/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmmi7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy5.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/MikTek/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msbm10.pfb><D:/MikTek/fonts/type1/public/amsfonts/symbols/msbm7.pfb><D:/MikTek/fonts/type1/public/cm-super/sftt1000.pfb><D:/MikTek/fonts/type1/public/urw-base35/utmb8a.pfb><D:/MikTek/fonts/type1/public/urw-base35/utmr8a.pfb><D:/MikTek/fonts/type1/public/urw-base35/utmri8a.pfb>
-Output written on templateArxiv.pdf (4 pages, 235653 bytes).
+Output written on templateArxiv.pdf (9 pages, 262533 bytes).
 PDF statistics:
- 199 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 60 named destinations out of 1000 (max. 500000)
  56901 words of extra memory for PDF output out of 61914 (max. 10000000)
 

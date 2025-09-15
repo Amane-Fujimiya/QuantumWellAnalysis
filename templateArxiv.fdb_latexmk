@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1756875259.99809 "e:/Code Repository/Archive I/QuantumW/templateArxiv.tex" "templateArxiv.pdf" "templateArxiv" 1756875264.56451 0
+["pdflatex"] 1757927035.81262 "e:/Code Repository/Archive I/QuantumW/templateArxiv.tex" "templateArxiv.pdf" "templateArxiv" 1757927044.30925 0
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1750169815 6792824 25ff5451ad5ac637fccabe56e3c57ec9 ""
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary10.tfm" 1752636001 848 f478e0761563bbc369eca609a1741348 ""
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/tfm/public/stmaryrd/stmary5.tfm" 1752636011 848 e1bc58a31b9ed9c3729ffea165acfaac ""
@@ -330,12 +330,12 @@
   "D:/MikTek/tex/latex/xcolor/x11nam.def" 1729265222 9125 edad0294b4f7dd6df8c57b02b40a0855 ""
   "D:/MikTek/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "PRIMEarxiv.sty" 1753223470 7647 257f5f0b6c90ec491e05bd461066ae66 ""
-  "e:/Code Repository/Archive I/QuantumW/templateArxiv.tex" 1756875258 15752 d3143bfe8c2988a534858bf07bc426ac ""
+  "e:/Code Repository/Archive I/QuantumW/templateArxiv.tex" 1757927033 38450 e0f51e833e34138af7dc5a96eb130840 ""
   "mathcommand.tex" 1753261171 15750 459b42063249cd94f9e4596dd28b6f58 ""
   "preamble.tex" 1753633009 5207 987e3e90a58553144fd6ce349df9fc24 ""
-  "templateArxiv.aux" 1756875264 1327 4ba65e7ef10f77c884ff86325603347d "pdflatex"
-  "templateArxiv.out" 1756875264 1522 baf5dcfed96b5ddc47d5b172ea077fa0 "pdflatex"
-  "templateArxiv.tex" 1756875258 15752 d3143bfe8c2988a534858bf07bc426ac ""
+  "templateArxiv.aux" 1757927043 1327 ef6535763d73445ab79d80935c98dccb "pdflatex"
+  "templateArxiv.out" 1757927043 1522 baf5dcfed96b5ddc47d5b172ea077fa0 "pdflatex"
+  "templateArxiv.tex" 1757927033 38450 e0f51e833e34138af7dc5a96eb130840 ""
   (generated)
   "templateArxiv.aux"
   "templateArxiv.log"
