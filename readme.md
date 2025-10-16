@@ -1,1 +1,1 @@
-A very simplified repository for holding codes and resources of LaTeX compilation for quantum well research. 
+A very simplified repository for holding codes and resources of LaTeX compilation for quantum well research. So for now it is kinda sucks. 
