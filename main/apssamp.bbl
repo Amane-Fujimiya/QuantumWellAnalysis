@@ -1,0 +1,613 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (8) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (0) allowed
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{54}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Griffiths}(2018)}]{griffiths2018}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~J.}\ \bibnamefont
+  {Griffiths}},\ }\href
+  {https://www.fisica.net/mecanica-quantica/Griffiths%20-%20Introduction%20to%20quantum%20mechanics.pdf}
+  {\emph {\bibinfo {title} {Introduction to Quantum Mechanics}}},\ \bibinfo
+  {edition} {3rd}\ ed.\ (\bibinfo  {publisher} {Cambridge University Press},\
+  \bibinfo {address} {Cambridge, UK},\ \bibinfo {year} {2018})\ \bibinfo {note}
+  {chapter on the infinite square well / particle-in-a-box
+  (pedagogical).}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Sakurai}\ and\ \citenamefont
+  {Napolitano}(2017)}]{sakurai2017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~J.}\ \bibnamefont
+  {Sakurai}}\ and\ \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Napolitano}},\ }\href@noop {} {\emph {\bibinfo {title} {Modern Quantum
+  Mechanics}}},\ \bibinfo {edition} {3rd}\ ed.\ (\bibinfo  {publisher}
+  {Cambridge University Press},\ \bibinfo {address} {Cambridge, UK},\ \bibinfo
+  {year} {2017})\ \bibinfo {note} {advanced single-particle and formalism
+  treatments, useful for rigorous QM background.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Landau}\ and\ \citenamefont
+  {Lifshitz}(1981)}]{landau1981}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~D.}\ \bibnamefont
+  {Landau}}\ and\ \bibinfo {author} {\bibfnamefont {E.~M.}\ \bibnamefont
+  {Lifshitz}},\ }\href@noop {} {\emph {\bibinfo {title} {Quantum Mechanics:
+  Non-Relativistic Theory}}},\ \bibinfo {edition} {3rd}\ ed.,\ \bibinfo
+  {series} {Course of Theoretical Physics}, Vol.~\bibinfo {volume} {3}\
+  (\bibinfo  {publisher} {Pergamon Press},\ \bibinfo {address} {Oxford, UK},\
+  \bibinfo {year} {1981})\ \bibinfo {note} {classic rigorous presentation of
+  bound states and scattering problems.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Kane}(1957)}]{kane1957}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {E.~O.}\ \bibnamefont
+  {Kane}},\ }\bibfield  {title} {\bibinfo {title} {Band structure of indium
+  antimonide},\ }\href {https://doi.org/10.1016/0022-3697(57)90013-6}
+  {\bibfield  {journal} {\bibinfo  {journal} {Journal of Physics and Chemistry
+  of Solids}\ }\textbf {\bibinfo {volume} {1}},\ \bibinfo {pages} {249}
+  (\bibinfo {year} {1957})},\ \bibinfo {note} {kane-model
+  (k{\textperiodcentered}p) development and non-parabolic-band physics; widely
+  used in narrow-gap semiconductor modelling.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Chang}(1980)}]{chang1980}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.~L.}\ \bibnamefont
+  {Chang}},\ }\bibfield  {title} {\bibinfo {title} {Electronic properties of
+  inas-gasb superlattices and related heterostructures},\ }\href@noop {}
+  {\bibfield  {journal} {\bibinfo  {journal} {(Review / Proceedings / various)
+  -- see original literature}\ } (\bibinfo {year} {1980})},\ \bibinfo {note}
+  {representative experimental/theoretical work on type-II heterostructures and
+  superlattices; see Chang and collaborators for detailed
+  datasets.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Kittel}(2005)}]{kittel2005}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Kittel}},\ }\href@noop {} {\emph {\bibinfo {title} {Introduction to Solid
+  State Physics}}},\ \bibinfo {edition} {8th}\ ed.\ (\bibinfo  {publisher}
+  {Wiley},\ \bibinfo {address} {Hoboken, NJ, USA},\ \bibinfo {year}
+  {2005})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bastard}(1988)}]{bastard1988}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Bastard}},\ }\href
+  {https://nguyen.hong.hai.free.fr/EBOOKS/SCIENCE%20AND%20ENGINEERING/MECANIQUE/DYNAMIQUE-VIBRATION/Wave_Mechanics_Applied_to_Semiconductor_Heterostructures__19.pdf}
+  {\emph {\bibinfo {title} {Wave Mechanics Applied to Semiconductor
+  Heterostructures}}}\ (\bibinfo  {publisher} {Les Editions de Physique},\
+  \bibinfo {address} {Les Ulis, France},\ \bibinfo {year} {1988})\ \bibinfo
+  {note} {classic monograph on envelope-function methods and heterostructure
+  quantum mechanics}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Davies}(1998)}]{davies1998}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~H.}\ \bibnamefont
+  {Davies}},\ }\href {https://books.google.com/books?id=JwfC1RFdQG8C} {\emph
+  {\bibinfo {title} {The Physics of Low-Dimensional Semiconductors: An
+  Introduction}}}\ (\bibinfo  {publisher} {Cambridge University Press},\
+  \bibinfo {address} {Cambridge, UK},\ \bibinfo {year} {1998})\ \bibinfo {note}
+  {pedagogical introduction to quantum wells, wires and 2D electron
+  gas}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Harrison}\ and\ \citenamefont
+  {Valavanis}(2016)}]{harrison2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Harrison}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Valavanis}},\ }\href {https://doi.org/10.1002/9781118923337} {\emph
+  {\bibinfo {title} {Quantum Wells, Wires and Dots: Theoretical and
+  Computational Physics of Semiconductor Nanostructures}}},\ \bibinfo {edition}
+  {4th}\ ed.\ (\bibinfo  {publisher} {John Wiley \& Sons},\ \bibinfo {address}
+  {Chichester, UK},\ \bibinfo {year} {2016})\ \bibinfo {note} {practical and
+  numerical treatments; finite-difference, transfer-matrix
+  examples}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Weisbuch}\ and\ \citenamefont
+  {Vinter}(1991)}]{weisbuch1991}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Weisbuch}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Vinter}},\ }\href@noop {} {\emph {\bibinfo {title} {Quantum Semiconductor
+  Structures: Fundamentals and Applications}}}\ (\bibinfo  {publisher}
+  {Academic Press},\ \bibinfo {address} {London, UK},\ \bibinfo {year} {1991})\
+  \bibinfo {note} {device-oriented treatments and experimental
+  links}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Haug}\ and\ \citenamefont
+  {Koch}(2009)}]{haugkoch2009}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Haug}}\ and\ \bibinfo {author} {\bibfnamefont {S.~W.}\ \bibnamefont
+  {Koch}},\ }\href {https://doi.org/10.1142/7184} {\emph {\bibinfo {title}
+  {Quantum Theory of the Optical and Electronic Properties of
+  Semiconductors}}},\ \bibinfo {edition} {5th}\ ed.\ (\bibinfo  {publisher}
+  {World Scientific},\ \bibinfo {address} {Singapore},\ \bibinfo {year}
+  {2009})\ \bibinfo {note} {comprehensive treatment of excitons, many-body and
+  optical response in low-dimensional systems}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yu}\ and\ \citenamefont {Cardona}(2010)}]{yu2010}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~Y.}\ \bibnamefont
+  {Yu}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Cardona}},\
+  }\href {https://doi.org/10.1007/978-3-642-00710-1} {\emph {\bibinfo {title}
+  {Fundamentals of Semiconductors: Physics and Materials Properties}}},\
+  \bibinfo {edition} {4th}\ ed.\ (\bibinfo  {publisher} {Springer},\ \bibinfo
+  {address} {Berlin / Heidelberg},\ \bibinfo {year} {2010})\ \bibinfo {note}
+  {broad semiconductor physics text — useful background for band structure
+  and effective-mass theory}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {B\^{a}rsan}\ and\ \citenamefont
+  {Ciornei}(2016)}]{barsan2016}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {B\^{a}rsan}}\ and\ \bibinfo {author} {\bibfnamefont {M.-C.}\ \bibnamefont
+  {Ciornei}},\ }\href {https://arxiv.org/abs/1610.09479} {\bibinfo {title}
+  {Semiconductor quantum wells with bendaniel--duke boundary conditions:
+  approximate analytical results}},\ \bibinfo {howpublished} {arXiv:1610.09479}
+  (\bibinfo {year} {2016}),\ \bibinfo {note} {helpful analytic approximations
+  for finite wells with position-dependent mass; arXiv PDF
+  available.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Esaki}\ and\ \citenamefont {Tsu}(1974)}]{esaki1974}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Esaki}}\ and\ \bibinfo {author} {\bibfnamefont {R.}~\bibnamefont {Tsu}},\
+  }\bibfield  {title} {\bibinfo {title} {New transport phenomenon in a
+  semiconductor superlattice},\ }\href
+  {https://doi.org/10.1103/PhysRevLett.33.495} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review Letters}\ }\textbf {\bibinfo {volume} {33}},\
+  \bibinfo {pages} {495} (\bibinfo {year} {1974})},\ \bibinfo {note} {seminal
+  experimental/theoretical work on superlattice transport.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {David}\ and\ \citenamefont
+  {Miller}(2020)}]{David2020OpticalPO}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {David}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Miller}},\
+  }\bibfield  {title} {\bibinfo {title} {Optical physics of quantum wells},\
+  }\href {https://api.semanticscholar.org/CorpusID:18868056} {\bibfield
+  {journal} {\bibinfo  {journal} {Quantum Dynamics of Simple Systems}\ }
+  (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{Note1()}]{Note1}%
+  \BibitemOpen
+  \bibinfo {note} {The need for this clarification is justified, as for even
+  sophisticated reader, and a lot of Large Language Model (LLM) of existence,
+  failed to read this part, or discard it as unimportant directly, and
+  criticize it later on. In a sense, automated machines or formalist readers
+  systematically discard ontological framing and then retroactively impose
+  mathematical standards, which is what we are to prevent our interpretation to
+  be of.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Kronig}\ and\ \citenamefont
+  {Penney}(1931)}]{10.1098/rspa.1931.0019}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~D.~L.}\
+  \bibnamefont {Kronig}}\ and\ \bibinfo {author} {\bibfnamefont {W.~G.}\
+  \bibnamefont {Penney}},\ }\bibfield  {title} {\bibinfo {title} {Quantum
+  mechanics of electrons in crystal lattices},\ }\href
+  {https://doi.org/10.1098/rspa.1931.0019} {\bibfield  {journal} {\bibinfo
+  {journal} {Proceedings of the Royal Society of London. Series A, Containing
+  Papers of a Mathematical and Physical Character}\ }\textbf {\bibinfo {volume}
+  {130}},\ \bibinfo {pages} {499} (\bibinfo {year} {1931})},\ \Eprint
+  {https://arxiv.org/abs/https://royalsocietypublishing.org/rspa/article-pdf/130/814/499/26568/rspa.1931.0019.pdf}
+  {https://royalsocietypublishing.org/rspa/article-pdf/130/814/499/26568/rspa.1931.0019.pdf}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2024)\citenamefont {Li},
+  \citenamefont {Hu},\ and\ \citenamefont
+  {Zhang}}]{li2024onedimensionperiodicpotentialsschrodinger}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Hu}},\ and\
+  \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Zhang}},\ }\href
+  {https://arxiv.org/abs/2410.23673} {\bibinfo {title} {One-dimension periodic
+  potentials in schr\"odinger equation solved by the finite difference method}}
+  (\bibinfo {year} {2024}),\ \Eprint {https://arxiv.org/abs/2410.23673}
+  {arXiv:2410.23673 [quant-ph]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Huang}\ \emph {et~al.}(2022)\citenamefont {Huang},
+  \citenamefont {Liu},\ and\ \citenamefont
+  {Zhou}}]{huang2DSemiconductorsSpecific2022}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {X.}~\bibnamefont
+  {Huang}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Liu}},\ and\
+  \bibinfo {author} {\bibfnamefont {P.}~\bibnamefont {Zhou}},\ }\bibfield
+  {title} {\bibinfo {title} {{{2D}} semiconductors for specific electronic
+  applications: From device to system},\ }\href
+  {https://doi.org/10.1038/s41699-022-00327-3} {\bibfield  {journal} {\bibinfo
+  {journal} {npj 2D Materials and Applications}\ }\textbf {\bibinfo {volume}
+  {6}},\ \bibinfo {pages} {51} (\bibinfo {year} {2022})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Facchetti}(2007)}]{FACCHETTI200728}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Facchetti}},\ }\bibfield  {title} {\bibinfo {title} {Semiconductors for
+  organic transistors},\ }\href
+  {https://doi.org/https://doi.org/10.1016/S1369-7021(07)70017-2} {\bibfield
+  {journal} {\bibinfo  {journal} {Materials Today}\ }\textbf {\bibinfo {volume}
+  {10}},\ \bibinfo {pages} {28} (\bibinfo {year} {2007})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Heitler}\ and\ \citenamefont
+  {London}(1927)}]{HeitlerLondon1927}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Heitler}}\ and\ \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {London}},\ }\bibfield  {title} {\bibinfo {title} {Wechselwirkung neutraler
+  atome und homopolare bindung nach der quantenmechanik},\ }\href
+  {https://doi.org/10.1007/BF01397394} {\bibfield  {journal} {\bibinfo
+  {journal} {Zeitschrift fur Physik}\ }\textbf {\bibinfo {volume} {44}},\
+  \bibinfo {pages} {455} (\bibinfo {year} {1927})},\ \bibinfo {note} {original
+  Heitler-London derivation for the H2 covalent bond; shows sym/antisym
+  combinations and energy splitting.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Slater}\ and\ \citenamefont
+  {Koster}(1954)}]{SlaterKoster1954}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~C.}\ \bibnamefont
+  {Slater}}\ and\ \bibinfo {author} {\bibfnamefont {G.~F.}\ \bibnamefont
+  {Koster}},\ }\bibfield  {title} {\bibinfo {title} {Simplified lcao method for
+  the periodic potential problem},\ }\href
+  {https://doi.org/10.1103/PhysRev.94.1498} {\bibfield  {journal} {\bibinfo
+  {journal} {Physical Review}\ }\textbf {\bibinfo {volume} {94}},\ \bibinfo
+  {pages} {1498} (\bibinfo {year} {1954})},\ \bibinfo {note} {foundational
+  tight-binding (LCAO) method and Slater-Koster parametrisation — the
+  standard link from two-site hopping to bands.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Papaconstantopoulos}\ and\ \citenamefont
+  {Mehl}(2003)}]{Papaconstantopoulos2003}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.~A.}\ \bibnamefont
+  {Papaconstantopoulos}}\ and\ \bibinfo {author} {\bibfnamefont {M.~J.}\
+  \bibnamefont {Mehl}},\ }\bibfield  {title} {\bibinfo {title} {The
+  slater-koster tight-binding method: a computationally efficient and accurate
+  approach},\ }\href {https://doi.org/10.1088/0953-8984/15/10/201} {\bibfield
+  {journal} {\bibinfo  {journal} {Journal of Physics: Condensed Matter}\
+  }\textbf {\bibinfo {volume} {15}},\ \bibinfo {pages} {R413} (\bibinfo {year}
+  {2003})},\ \bibinfo {note} {modern, practical review of Slater-Koster
+  tight-binding and parameter fitting; useful for translating two-site
+  integrals into realistic band models.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Harrison}(1980)}]{Harrison1980}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.~A.}\ \bibnamefont
+  {Harrison}},\ }\href@noop {} {\emph {\bibinfo {title} {Electronic Structure
+  and the Properties of Solids: The Physics of the Chemical Bond}}}\ (\bibinfo
+  {publisher} {W. H. Freeman},\ \bibinfo {address} {San Francisco},\ \bibinfo
+  {year} {1980})\ \bibinfo {note} {concise derivations and estimates of hopping
+  (overlap) integrals and their distance dependence; excellent for
+  order-of-magnitude analytic estimates of AB Hamiltonian.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Ashcroft}\ and\ \citenamefont
+  {Mermin}(1976)}]{AshcroftMermin1976}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {N.~W.}\ \bibnamefont
+  {Ashcroft}}\ and\ \bibinfo {author} {\bibfnamefont {N.~D.}\ \bibnamefont
+  {Mermin}},\ }\href@noop {} {\emph {\bibinfo {title} {Solid State Physics}}}\
+  (\bibinfo  {publisher} {Holt, Rinehart and Winston},\ \bibinfo {address} {New
+  York, NY},\ \bibinfo {year} {1976})\ \bibinfo {note} {canonical solid-state
+  textbook: band formation, tight-binding and nearly-free electron discussions,
+  plus formal derivations.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Szabo}\ and\ \citenamefont
+  {Ostlund}(1996)}]{SzaboOstlund1989}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Szabo}}\ and\ \bibinfo {author} {\bibfnamefont {N.~S.}\ \bibnamefont
+  {Ostlund}},\ }\href@noop {} {\emph {\bibinfo {title} {Modern Quantum
+  Chemistry: Introduction to Advanced Electronic Structure Theory}}}\ (\bibinfo
+   {publisher} {Dover Publications},\ \bibinfo {address} {Mineola, NY},\
+  \bibinfo {year} {1996})\ \bibinfo {note} {graduate-level quantum-chemistry
+  text — explicit LCAO/Hartree-Fock derivations, evaluation of two-center
+  integrals, and H2 worked examples.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Ko{\l}os}\ and\ \citenamefont
+  {Wolniewicz}(1965)}]{KolosWolniewicz1965}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Ko{\l}os}}\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Wolniewicz}},\ }\bibfield  {title} {\bibinfo {title} {Potential-energy
+  curves for the {X}$^{1}\sigma_{g}^{+}$, {b}$^{3}\sigma_{u}^{+}$, and
+  {C}$^{1}\pi_{u}$ states of the hydrogen molecule},\ }\href
+  {https://doi.org/10.1063/1.1697147} {\bibfield  {journal} {\bibinfo
+  {journal} {The Journal of Chemical Physics}\ }\textbf {\bibinfo {volume}
+  {43}},\ \bibinfo {pages} {2429} (\bibinfo {year} {1965})}\BibitemShut
+  {NoStop}%
+\bibitem [{Note2()}]{Note2}%
+  \BibitemOpen
+  \bibinfo {note} {Note that the reference level is a bookkeeping device, not
+  necessarily a choice for minimum energy, while there are cases where they
+  coincide. Another confusion point is that typically, the scale is inverted.
+  That is, we set $E(\infty )=0$, thus for all minimal ground state of
+  actionable and physical system, the baseline is mathematically encoded as
+  negative. The choice of Hydrogen is because it gives ideally analytical
+  non-relativistic Coulomb bound system, which is better than having a chaotic
+  system with non-trivial properties as reference point. Since energy of a
+  system is encoded by the Hamiltonian, typically the definition of ground
+  state, would be $\min {\sigma (H)}$ for the minima of all possible energy
+  values of the Hamiltonian, assuming discrete quantization Hamiltonian
+  operator.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Peeters}\ and\ \citenamefont
+  {Hip{\'o}lito}(1992)}]{Peeters1992LowDS}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.~M.}\ \bibnamefont
+  {Peeters}}\ and\ \bibinfo {author} {\bibfnamefont {O.}~\bibnamefont
+  {Hip{\'o}lito}},\ }\bibfield  {title} {\bibinfo {title} {Low dimensional
+  semiconductor structures}\ }(\bibinfo {year} {1992})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Group}(2025)}]{WarwickSemiconductorsGroup2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~R.}\ \bibnamefont
+  {Group}},\ }\href@noop {} {\bibinfo {title} {Semiconductors research group at
+  the university of warwick}},\ \bibinfo {howpublished} {Research Group
+  Profile} (\bibinfo {year} {2025})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Fulde}(1995)}]{Fulde1995}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.}~\bibnamefont
+  {Fulde}},\ }\bibinfo {title} {The independent-electron approximation},\ in\
+  \href {https://doi.org/10.1007/978-3-642-57809-0_2} {\emph {\bibinfo
+  {booktitle} {Electron Correlations in Molecules and Solids}}}\ (\bibinfo
+  {publisher} {Springer Berlin Heidelberg},\ \bibinfo {address} {Berlin,
+  Heidelberg},\ \bibinfo {year} {1995})\ pp.\ \bibinfo {pages}
+  {5--38}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {McGuire}(1997)}]{McGuire_1997}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~H.}\ \bibnamefont
+  {McGuire}},\ }\bibinfo {title} {Independent electron approximation},\ in\
+  \href@noop {} {\emph {\bibinfo {booktitle} {Electron Correlation Dynamics in
+  Atomic Collisions}}},\ \bibinfo {series and number} {Cambridge Monographs on
+  Atomic, Molecular and Chemical Physics}\ (\bibinfo  {publisher} {Cambridge
+  University Press},\ \bibinfo {year} {1997})\ pp.\ \bibinfo {pages}
+  {77--105}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Pfeiffer}\ \emph {et~al.}(2011)\citenamefont
+  {Pfeiffer}, \citenamefont {Cirelli}, \citenamefont {Smolarski}, \citenamefont
+  {Wang}, \citenamefont {Eberly}, \citenamefont {Dörner},\ and\ \citenamefont
+  {Keller}}]{Pfeiffer_2011}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~N.}\ \bibnamefont
+  {Pfeiffer}}, \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Cirelli}},
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Smolarski}}, \bibinfo
+  {author} {\bibfnamefont {X.}~\bibnamefont {Wang}}, \bibinfo {author}
+  {\bibfnamefont {J.~H.}\ \bibnamefont {Eberly}}, \bibinfo {author}
+  {\bibfnamefont {R.}~\bibnamefont {Dörner}},\ and\ \bibinfo {author}
+  {\bibfnamefont {U.}~\bibnamefont {Keller}},\ }\bibfield  {title} {\bibinfo
+  {title} {Breakdown of the independent electron approximation in sequential
+  double ionization},\ }\href {https://doi.org/10.1088/1367-2630/13/9/093008}
+  {\bibfield  {journal} {\bibinfo  {journal} {New Journal of Physics}\ }\textbf
+  {\bibinfo {volume} {13}},\ \bibinfo {pages} {093008} (\bibinfo {year}
+  {2011})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Bloch}(1929)}]{blochUberQuantenmechanikElektronen1929a}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {F.}~\bibnamefont
+  {Bloch}},\ }\bibfield  {title} {\bibinfo {title} {{\"Uber die Quantenmechanik
+  der Elektronen in Kristallgittern}},\ }\href
+  {https://doi.org/10.1007/BF01339455} {\bibfield  {journal} {\bibinfo
+  {journal} {Zeitschrift f\"ur Physik}\ }\textbf {\bibinfo {volume} {52}},\
+  \bibinfo {pages} {555} (\bibinfo {year} {1929})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rabinovitch}(1971)}]{PhysRevB.4.1017}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Rabinovitch}},\ }\bibfield  {title} {\bibinfo {title} {Effective-mass
+  approximation for bloch electrons in finite-range constant electric fields},\
+  }\href {https://doi.org/10.1103/PhysRevB.4.1017} {\bibfield  {journal}
+  {\bibinfo  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {4}},\
+  \bibinfo {pages} {1017} (\bibinfo {year} {1971})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Yeo}\ \emph {et~al.}(2020)\citenamefont {Yeo},
+  \citenamefont {Lee}, \citenamefont {Khan}, \citenamefont {Kim}, \citenamefont
+  {Jeon},\ and\ \citenamefont {Kim}}]{Yeo_2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Yeo}}, \bibinfo {author} {\bibfnamefont {J.~S.}\ \bibnamefont {Lee}},
+  \bibinfo {author} {\bibfnamefont {M.~E.}\ \bibnamefont {Khan}}, \bibinfo
+  {author} {\bibfnamefont {H.~S.}\ \bibnamefont {Kim}}, \bibinfo {author}
+  {\bibfnamefont {D.~Y.}\ \bibnamefont {Jeon}},\ and\ \bibinfo {author}
+  {\bibfnamefont {Y.-H.}\ \bibnamefont {Kim}},\ }\bibfield  {title} {\bibinfo
+  {title} {First-principles-derived effective mass approximation for the
+  improved description of quantum nanostructures},\ }\href
+  {https://doi.org/10.1088/2515-7639/ab9b61} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Physics: Materials}\ }\textbf {\bibinfo {volume} {3}},\
+  \bibinfo {pages} {034012} (\bibinfo {year} {2020})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Donetti}\ \emph {et~al.}(2011)\citenamefont
+  {Donetti}, \citenamefont {Gámiz}, \citenamefont {Thomas}, \citenamefont
+  {Whall}, \citenamefont {Leadley}, \citenamefont {Hellström}, \citenamefont
+  {Malm},\ and\ \citenamefont {Östling}}]{10.1063/1.3639281}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {L.}~\bibnamefont
+  {Donetti}}, \bibinfo {author} {\bibfnamefont {F.}~\bibnamefont {Gámiz}},
+  \bibinfo {author} {\bibfnamefont {S.}~\bibnamefont {Thomas}}, \bibinfo
+  {author} {\bibfnamefont {T.~E.}\ \bibnamefont {Whall}}, \bibinfo {author}
+  {\bibfnamefont {D.~R.}\ \bibnamefont {Leadley}}, \bibinfo {author}
+  {\bibfnamefont {P.-E.}\ \bibnamefont {Hellström}}, \bibinfo {author}
+  {\bibfnamefont {G.}~\bibnamefont {Malm}},\ and\ \bibinfo {author}
+  {\bibfnamefont {M.}~\bibnamefont {Östling}},\ }\bibfield  {title} {\bibinfo
+  {title} {Hole effective mass in silicon inversion layers with different
+  substrate orientations and channel directions},\ }\href
+  {https://doi.org/10.1063/1.3639281} {\bibfield  {journal} {\bibinfo
+  {journal} {Journal of Applied Physics}\ }\textbf {\bibinfo {volume} {110}},\
+  \bibinfo {pages} {063711} (\bibinfo {year} {2011})}\BibitemShut {NoStop}%
+\bibitem [{Note3()}]{Note3}%
+  \BibitemOpen
+  \bibinfo {note} {The envelope function refers to a mathematical
+  representation of a wavefunction in quantum wells, characterized by a plane
+  wave in the in-plane directions (x, y) and a localized wavefunction in the
+  z-direction, normalized to the sample area. It describes the spatial
+  distribution of particles confined in a quantum system while allowing for
+  extended states in the unconfined directions \cite
+  {EnvelopeFunctionOverview}.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Li}\ \emph {et~al.}(2014)\citenamefont {Li},
+  \citenamefont {Qian},\ and\ \citenamefont {Li}}]{Li_2014}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {W.}~\bibnamefont
+  {Li}}, \bibinfo {author} {\bibfnamefont {X.}~\bibnamefont {Qian}},\ and\
+  \bibinfo {author} {\bibfnamefont {J.}~\bibnamefont {Li}},\ }\bibfield
+  {title} {\bibinfo {title} {Envelope function method for electrons in
+  slowly-varying inhomogeneously deformed crystals},\ }\href
+  {https://doi.org/10.1088/0953-8984/26/45/455801} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Physics: Condensed Matter}\ }\textbf
+  {\bibinfo {volume} {26}},\ \bibinfo {pages} {455801} (\bibinfo {year}
+  {2014})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Burt}(1999)}]{M_G_Burt_1999}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont
+  {Burt}},\ }\bibfield  {title} {\bibinfo {title} {Fundamentals of envelope
+  function theory for electronic states and photonic modes in nanostructures},\
+  }\href {https://doi.org/10.1088/0953-8984/11/9/002} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Physics: Condensed Matter}\ }\textbf
+  {\bibinfo {volume} {11}},\ \bibinfo {pages} {53} (\bibinfo {year}
+  {1999})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Burt}(1992)}]{Burt1992TheJF}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~G.}\ \bibnamefont
+  {Burt}},\ }\bibfield  {title} {\bibinfo {title} {The justification for
+  applying the effective-mass approximation to microstructures},\ }\href
+  {https://api.semanticscholar.org/CorpusID:123472441} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of Physics: Condensed Matter}\ }\textbf
+  {\bibinfo {volume} {4}},\ \bibinfo {pages} {6651} (\bibinfo {year}
+  {1992})}\BibitemShut {NoStop}%
+\bibitem [{Note4()}]{Note4}%
+  \BibitemOpen
+  \bibinfo {note} {In essence, what we say is: classical models assume
+  specification completeness. Quantum mechanics assumes
+  interaction-completeness. And finally, the wavefunction is not a state of
+  reality but a sufficient encoding under epistemic constraint, and that is
+  exactly why it works.}\BibitemShut {Stop}%
+\bibitem [{\citenamefont {Ishida}\ and\ \citenamefont
+  {Kawamoto}(2025)}]{Ishida_2025}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Ishida}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Kawamoto}},\ }\bibfield  {title} {\bibinfo {title} {On schrödinger equation
+  with square and inverse-square potentials},\ }\bibfield  {journal} {\bibinfo
+  {journal} {Partial Differential Equations and Applications}\ }\textbf
+  {\bibinfo {volume} {6}},\ \href {https://doi.org/10.1007/s42985-025-00325-2}
+  {10.1007/s42985-025-00325-2} (\bibinfo {year} {2025})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Chorfi}(2024)}]{chorfi2024uniquenessschrodingerequationinverse}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.~E.}\ \bibnamefont
+  {Chorfi}},\ }\href {https://arxiv.org/abs/2410.21466} {\bibinfo {title}
+  {Uniqueness for the schr\"odinger equation with an inverse square potential
+  and application to controllability and inverse problems}} (\bibinfo {year}
+  {2024}),\ \Eprint {https://arxiv.org/abs/2410.21466} {arXiv:2410.21466
+  [math.AP]} \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Houtput}\ \emph {et~al.}(2025)\citenamefont
+  {Houtput}, \citenamefont {Ranalli}, \citenamefont {Verdi}, \citenamefont
+  {Klimin}, \citenamefont {Ragni}, \citenamefont {Franchini},\ and\
+  \citenamefont
+  {Tempere}}]{houtput2025firstprinciplestheorynonlinearlongrange}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Houtput}}, \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Ranalli}},
+  \bibinfo {author} {\bibfnamefont {C.}~\bibnamefont {Verdi}}, \bibinfo
+  {author} {\bibfnamefont {S.}~\bibnamefont {Klimin}}, \bibinfo {author}
+  {\bibfnamefont {S.}~\bibnamefont {Ragni}}, \bibinfo {author} {\bibfnamefont
+  {C.}~\bibnamefont {Franchini}},\ and\ \bibinfo {author} {\bibfnamefont
+  {J.}~\bibnamefont {Tempere}},\ }\href {https://arxiv.org/abs/2412.09470}
+  {\bibinfo {title} {First-principles theory of nonlinear long-range
+  electron-phonon interaction}} (\bibinfo {year} {2025}),\ \Eprint
+  {https://arxiv.org/abs/2412.09470} {arXiv:2412.09470 [cond-mat.mtrl-sci]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Griffin}\ and\ \citenamefont
+  {Kryjevski}(2025)}]{griffin2025phononmediatedrelaxationnanomaterialscombining}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Griffin}}\ and\ \bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Kryjevski}},\ }\href {https://arxiv.org/abs/2503.17607} {\bibinfo {title}
+  {Phonon-mediated relaxation in nanomaterials from combining density
+  functional theory based non-adiabatic molecular dynamics with
+  kadanoff-baym-keldysh technique}} (\bibinfo {year} {2025}),\ \Eprint
+  {https://arxiv.org/abs/2503.17607} {arXiv:2503.17607 [cond-mat.mes-hall]}
+  \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nojima}\ \emph {et~al.}(2008)\citenamefont {Nojima},
+  \citenamefont {Yamashita},\ and\ \citenamefont
+  {Hellsing}}]{PhysRevB.78.035417}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Nojima}}, \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont {Yamashita}},\
+  and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Hellsing}},\
+  }\bibfield  {title} {\bibinfo {title} {Model calculation of the
+  electron-phonon coupling in cs/cu(111)},\ }\href
+  {https://doi.org/10.1103/PhysRevB.78.035417} {\bibfield  {journal} {\bibinfo
+  {journal} {Phys. Rev. B}\ }\textbf {\bibinfo {volume} {78}},\ \bibinfo
+  {pages} {035417} (\bibinfo {year} {2008})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Bruus}\ and\ \citenamefont
+  {Flensberg}(2004)}]{bruus_flensberg_2004}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Bruus}}\ and\ \bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Flensberg}},\ }\href@noop {} {\emph {\bibinfo {title} {Many-Body Quantum
+  Theory in Condensed Matter Physics: An Introduction}}}\ (\bibinfo
+  {publisher} {Oxford University Press},\ \bibinfo {address} {Oxford},\
+  \bibinfo {year} {2004})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mahan}(2000)}]{mahan_2000}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~D.}\ \bibnamefont
+  {Mahan}},\ }\href {https://doi.org/10.1007/978-1-4757-5714-9} {\emph
+  {\bibinfo {title} {Many-Particle Physics}}},\ \bibinfo {edition} {3rd}\ ed.\
+  (\bibinfo  {publisher} {Kluwer Academic / Plenum Publishers},\ \bibinfo
+  {address} {New York},\ \bibinfo {year} {2000})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kubo}(1957)}]{kubo_1957}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Kubo}},\ }\bibfield  {title} {\bibinfo {title} {Statistical-mechanical
+  theory of irreversible processes. i. general theory and simple applications
+  to magnetic and conduction problems},\ }\href@noop {} {\bibfield  {journal}
+  {\bibinfo  {journal} {Journal of the Physical Society of Japan}\ }\textbf
+  {\bibinfo {volume} {12}},\ \bibinfo {pages} {570} (\bibinfo {year}
+  {1957})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Murthy}(2014)}]{murthy_2014_kubo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.}~\bibnamefont
+  {Murthy}},\ }\href@noop {} {\bibinfo {title} {Linear response and the kubo
+  formula}},\ \bibinfo {howpublished} {Lecture notes, Department of Physics \&
+  Astronomy, University of Kentucky} (\bibinfo {year} {2014})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Aversa}\ and\ \citenamefont
+  {Sipe}(1995)}]{aversa_sipe_1995}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Aversa}}\ and\ \bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
+  {Sipe}},\ }\bibfield  {title} {\bibinfo {title} {Nonlinear optical
+  susceptibilities of semiconductors: Results with a length-gauge analysis},\
+  }\href {https://doi.org/10.1103/PhysRevB.52.14636} {\bibfield  {journal}
+  {\bibinfo  {journal} {Physical Review B}\ }\textbf {\bibinfo {volume} {52}},\
+  \bibinfo {pages} {14636} (\bibinfo {year} {1995})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Watanabe}\ \emph {et~al.}(2020)\citenamefont
+  {Watanabe}, \citenamefont {Liu},\ and\ \citenamefont
+  {Oshikawa}}]{watanabe_etal_2020}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {H.}~\bibnamefont
+  {Watanabe}}, \bibinfo {author} {\bibfnamefont {Y.}~\bibnamefont {Liu}},\ and\
+  \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Oshikawa}},\ }\bibfield
+  {title} {\bibinfo {title} {On the general properties of non-linear optical
+  conductivities},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {arXiv e-prints}\ } (\bibinfo {year} {2020})},\ \Eprint
+  {https://arxiv.org/abs/arXiv:2004.04561} {arXiv:2004.04561} \BibitemShut
+  {NoStop}%
+\bibitem [{Env()}]{EnvelopeFunctionOverview}%
+  \BibitemOpen
+  \href@noop {} {\bibinfo {title} {Envelope {{Function}} - an overview
+  \textbar{} {{ScienceDirect Topics}}}},\ \bibinfo {howpublished}
+  {https://www.sciencedirect.com/topics/engineering/envelope-function}\BibitemShut
+  {NoStop}%
+\end{thebibliography}%

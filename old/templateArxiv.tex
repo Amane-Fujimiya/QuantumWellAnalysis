@@ -1,0 +1,824 @@
+\documentclass{article}
+
+
+\usepackage{PRIMEarxiv}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+
+\input{preamble.tex}
+\usepackage[leftcaption]{sidecap}
+\input{mathcommand.tex}
+%Header
+\pagestyle{fancy}
+\thispagestyle{empty}
+\rhead{ \textit{ }} 
+
+\graphicspath{{media/}}     % organize your images and other figures under media/ folder
+
+% Update your Headers here
+\fancyhead[LO]{Nonlinear absorption}
+% \fancyhead[RE]{Firstauthor and Secondauthor} % Firstauthor et al. if more than 2 - must use \documentclass[twoside]{article}
+
+\usepackage{stmaryrd}
+
+\usepackage{csquotes}
+\makeatletter
+\patchcmd{\csq@bquote@i}{{#6}}{{\emph{#6}}}{}{}
+\makeatother
+\renewcommand{\mkbegdispquote}[2]{\itshape}
+  
+%% Title
+\title{Quantum well and nonlinear absorption - a review
+%%%% Cite as
+%%%% Update your official citation here when published 
+\thanks{\textit{\underline{Citation}}: 
+\textbf{Authors. Title. Pages.... DOI:000000/11111.}} 
+}
+
+\author{
+  Bui Gia Khanh\\
+  Department of Physics, Hanoi University of Science \\
+  Hanoi, Vietnam\\
+  \texttt{fujimiyaamane@outlook.com} \\
+  %% examples of more authors
+   \AND
+  Nguyen Duc Phung \\
+   Department of Physics, Hanoi University of Science \\
+  Hanoi, Vietnam\\
+  \texttt{email@email} \\
+  \And 
+  Duong Ngoc Khoa \\
+   Department of Physics, Hanoi University of Science \\
+  Hanoi, Vietnam \\
+  \texttt{email@email} 
+  %% \And
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+  %% \And
+  %% Coauthor \\
+  %% Affiliation \\
+  %% Address \\
+  %% \texttt{email} \\
+}
+
+\newcommand{\veck}{{\vec{k}_{\perp}}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    In this paper, we provide non-original analysis on quantum well system, and the physical systems interpretation of such quantum theory. Furthermore, we would like to give an example on the consideration of \textit{nonlinear absorption effect} in such system, for the example of half-parabolic, asymmetric, finite, additive quantum well with or without the presence of a uniform electric field of perpendicular sectioning in the $z$-axis. The scope of the origin of quantum well and necessity of such modelling will also be included of typical geometrical configuration of a low-dimensional restrictive well. 
+\end{abstract}
+
+\section{Introduction}
+
+A \textbf{quantum well}, is a type of constrain that reduce a system of three-dimensional free charge into a two-dimension free-motion system. This is the act of dimensional reduction of specific microscopic matter, which is then called \textit{low-dimensional system}. This is ultimately used for modelling structures of quantum scale, for example, a system of semiconductor (\texttt{GaAs} quantum semiconductor system). The quantum well in equation~\ref{eq:quantum_well_main_1} 
+\begin{equation}\label{eq:quantum_well_main_1}
+    V(z)=\begin{cases}
+        V_{0} & x \leq L_{1} \\
+        \dfrac{1}{2}m_{{e}}\omega_{z}^{2}z^{2}+  V_{ext}(z) & L_{1} < x < L_{2}\\
+        V_{0} & x \geq L_{2}
+    \end{cases}
+\end{equation}
+is one of such quantum well, restricting on the $z$-axis only, leaving the other two dimension free of particle. Often, the form of such quantum well is not trivial, for example, we can see that it has the harmonic terms on the left, and an external quantization $V_{ext}(z)$ to the right. Such $V(z)$ can be used to express certain effects of external, non-fixed potential application from different sources, and so on, of which are particularly interesting. 
+
+Historically, 
+
+\clearpage
+
+\section{Example on quantum well $V$}
+
+Our quantum system in consideration of this section is of the form: 
+\begin{equation}\label{eq:quantum_well_main_2}
+    V(z)=\begin{cases}
+        V_{0} & x \leq L_{1} \\
+        \dfrac{1}{2}m_{{e}}\omega_{z}^{2}z^{2}+ \dfrac{\hbar^{2}\beta_{z}}{2m_{e}z^{2}} + V_{ext}(z) & L_{1} < x < L_{2}\\
+        V_{0} & x \geq L_{2}
+    \end{cases}
+\end{equation}
+Where $\omega_{z}$ is the angular momenta of the electron in the $z$-direction, $m_{e}$ the rest mass, $\hbar$ as Planck reduced constant, $\beta_{z}$ is the intrinsic constant of the quantum well configuration, and $V_{ext}(z)$ the external electric field of uniform polarized strength in the same dimension. The goal of the main research is then to analyse the nonlinear absorption coefficient of strong electromagnetic waves for electrons confined in an asymmetric finite semi-parabolic quantum well with resonance in the presence of electric fields. Of such, successive operations and formulation will be extensively expressed. 
+
+In our above well, we notice that it models the factors: 
+\begin{equation}
+    V_{1}(z)=\frac{1}{2} m_{{e}}\omega_{z}^{2}z^{2},\quad V_{2}(z)=\frac{\hbar^{2}\beta_{z}}{2m_{e}z^{2}},\quad V_{3}(z) = V_{ext}(z)
+\end{equation}
+where $V_{1}$ is the half-parabolic (by the coordinate of the range $[L_{1},L_{2}]$), antisymmetric potential, which model a saddle point of potential (simulating some imperfect electron-pulling region), $V_{2}$ simulates the smoothing version of the normal square well, by adding reduction on the scale of inverse-square law (factor $1/z^{2}$), and $V_{3}$ for external field potential. 
+\section{Quantum well without external field}
+For equation~\ref{eq:quantum_well_main_1}, its energy spectrum can be calculated for the external electrical field. If such external field is ruled out, so $V_{\mathrm{ext}}(z)=0$, then 
+\begin{equation}\label{eq:quantum_well_main_2}
+    V(z)=\frac{1}{2}m_{{e}}\omega_{z}^{2}z^{2}+ \frac{\hbar^{2}\beta_{z}}{2m_{e}z^{2}} 
+\end{equation}
+The Schrödinger equation for time-independent, assuming separable solution as always is then:
+\begin{equation}
+    -\frac{\hbar^{2}}{2m_{e}} \frac{\partial^{2}}{\partial z^{2}} \phi_{n}(z) + V(z)\phi_{n}(z) = E\phi_{n}(z)
+\end{equation}
+which is written as we change to the final state of $V(z)$:
+\begin{equation}
+    -\frac{\hbar^{2}}{2m_{e}} \frac{\partial^{2}}{\partial z^{2}} \phi_{n}(z) + \left[\frac{1}{2}m_{{e}}\omega_{z}^{2}z^{2}+ \frac{\hbar^{2}\beta_{z}}{2m_{e}z^{2}}\right]\phi_{n}(z) = E\phi_{n}(z)
+\end{equation}
+This equation is reserved for the $z$-axis, every other axis can be resolved using the free-particle case. The solution to such problem gives the wavefunction: 
+\begin{equation}
+    \phi_{n}(z) = A_{n}z^{2s}\exp{\left(-\frac{z^{2}}{2\alpha_{z}^{2}}\right)}L^{\delta}_{n}\left(\frac{z^{2}}{\alpha_{z}^{2}}\right)
+\end{equation}
+where $L^{\delta}_{n}$ are Legendre polynomials, with the following constants: 
+\begin{equation}
+    s=\frac{1}{4}\left(1+\sqrt{1+4\beta_{z}}\right), \quad \delta = 2s - \frac{1}{2}, \quad \alpha_{z} = \sqrt{\frac{\hbar}{m_{e}\omega_{z}}}
+\end{equation}
+Here, the constant $A_{0}$ is just the normalization constant. Hence, it must satisfy: 
+\begin{equation}
+    A_{n}^{2} \int_{0}^{L} \left[z^{2s}\exp{\left(-\frac{z^{2}}{2\alpha_{z}^{2}}\right)}L^{\delta}_{n}\left(\frac{z^{2}}{\alpha_{z}^{2}}\right)\right]^{2} \: dz = 1
+\end{equation}
+
+The ground and first initial state of this wavefunction is 
+\begin{align}
+    \phi_{0}(z) & = A_{0}z^{2s}\exp{\left(-\frac{z^{2}}{2\alpha^{2}_{z}}\right)} \\
+    \phi_{1}(z) & = A_{1} z^{2s}\exp{\left( -\frac{z^{2}}{2\alpha^{2}_{z}} \right)} \left(-\frac{z^{2}}{\alpha_{z}^{2}}+\gamma + 1\right)
+\end{align}
+which has normalization constant using such calculation being 
+
+\begin{align}
+    A_{0} & = \sqrt{2}\alpha_{z}^{-1/2-2s} \left[\Gamma \left(\frac{1}{2}+2s\right), \Gamma\left(\frac{1}{2}+2s, \frac{L^{2}}{\alpha_{z}^{2}}\right)\right]^{-1/2}\\
+    A_{1} & = 2\sqrt{2} \alpha_{z}^{-1/2-2s} \left\{ \left[3+4\gamma^{2}+\gamma(4-16s)+16s^{2}\right] \Gamma\left(\frac{1}{2}+2s\right)- T_{1} - T_{2}\right\}
+\end{align}
+for the two terms $T_{1},T_{2}$ being
+\begin{equation}
+    T_{1} = 4(1+\gamma)^{2} \Gamma\left(\frac{1}{2}+2s, \frac{L^{2}}{\alpha_{z}^{2}}\right) + \gamma(1+\gamma) \Gamma \left(\frac{3}{2}+2s, \frac{L^{2}}{\alpha_{z}^{2}}\right)
+\end{equation}
+and 
+\begin{equation}
+    T_{2} = 4\Gamma \left(\frac{3}{2}+2s, \frac{L^{2}}{\alpha_{z}^{2}} \right)
+\end{equation}
+
+The energy spectrum of the quantum well is then calculated as 
+\begin{equation}
+    \mathcal{E} = \hbar \omega_{z} \left( 2n+1 + \frac{1}{2}\sqrt{1+4\beta_{z}} \right)
+\end{equation}
+which reduces to $\hbar\omega_{z}(2n+3/2)$ when $\beta_{z}\to 0$. In general, the form constant is calculated of 
+\begin{equation}
+    I_{z} = 2\int \phi^{*}_{0}(z)\cos{(q_{z})z}\phi_{1}\:dz, \quad I_{q_{z}} = \int_{-\infty}^{+\infty} \lvert I_{z}\rvert^{2} \: dq_{z}
+\end{equation}
+\subsection{With electric and magnetic field}
+
+In the case of perpendicular within radial axis of electrical field $\vec{B}(0,0,B)$ and magnetic field $\vec{E}(E,0,0)$, we can solve it `totally similar' to the case of semi-parabolic, asymmetric infinite well, hence the form of the wavefunction is still
+\begin{equation} 
+    \phi(\vec{r}) = \phi_{0}\Phi(x-x_0)\exp{(ik_{y}y)}\phi_{n}(z)
+\end{equation}
+where $\Phi(x-x_0)$ is the harmonic wavefunction centres at $x_{0}$, $\phi_{n}(x)$ the calculated step wavefunction, for \begin{equation}
+    x_{0} = -\frac{\hbar}{eB} \left( k_{y} + \frac{m_{e}E}{\hbar B} \right) = \ell^{2} \left(k_y - \frac{m_e v_{d}}{\hbar}\right)
+\end{equation}
+The energy spectrum does not change much, 
+\begin{equation}
+    \mathcal{E} = \hbar \omega_{z} \left( 2n+1 + \frac{1}{2}\sqrt{1+4\beta_{z}} \right) + \left(N+\frac{1}{2}\right)\hbar \omega_{c} + \hbar v_{d} k_{y} - \frac{1}{2} m_{e}v_{d}^{2}
+\end{equation}
+\section{Absorption of electromagnetic waves}
+
+\subsection{Hamiltonian of an electromagnetic - phonon interaction in quantum well}
+
+To start with the analysis, we need some formulations of the interaction of electron, phonon and external electrical field within the confinement of the quantum well. This can be separated to three operators interactions: external electric field interaction, non-interacting phonon interaction, and electron-phonon interaction. 
+
+Call $z$ the space spatial axis being quantized, the Hamiltonian for the electromagnetic-phonon interaction in the quantum well when there exists external electric field $\vec{E}(t)=\vec{E}_{0}\sin{(\Omega t)}$ as 
+
+\begin{align}
+    \mathcal{H}& = \underbrace{\sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right)a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} }_{\text{external field}} \\ 
+    & \underbrace{\quad + \sum_{\vec{q}} \hbar \omega_{0} b_{\vec{q}}^{+} b_{\vec{q}}}_{\text{non-interacting phonons} } \\
+    & \underbrace{\quad + \sum_{\vec{q}} \sum_{n,n', \vec{k}_{\perp}} C_{\vec{q}} I_{n,n'}(q_{z}) a^{+}_{n',\vec{k}_{\perp}+\vec{q}} a_{n,\vec{k}_{\perp}} \left(b_{\vec{q}} + b^{+}_{- \vec{q}}\right)}_{\text{electron-phonon }}
+\end{align}
+with $\mathcal{E}_{n}$ is the energy of the electron, $\vec{k}_{\perp}, \vec{q}$ are the vectors of electron and phonon in the system respectively, $\ket{n; \vec{k}_{\perp}}$, $\bra{n;\vec{k}_{\perp}+\vec{q}}$ being the system's electron state before and after the scattering interaction of the system. For the external field, which is considered orthogonal, $\vec{A}(t)$ is expressed as the electrical potential 
+\begin{equation}
+    -\frac{1}{c} \frac{d}{dt} \vec{A}(t) = \vec{E}_{0}\sin{(\Omega t)},\quad  \vec{A}(t) = \frac{c}{r} \vec{E}_{0}\cos{(\omega t )}
+\end{equation}
+$I_{n,n'}(q_{z})$ is the electronic form factor of the heterogenous, constituent superlattice - in our case of quantum well is a special case. This is usually expressed as 
+\begin{equation}
+    I_{n,n'}(q_{z}) \int_{0}^{N_{d}} \Psi^{*}_{n}(z) \Psi_{n'}(z)\exp{(iq_{z}z)}\: dz = \frac{2}{L} \int_{0}^{L} \Psi^{*}_{n}(z)\Psi_{n'}(z)\exp{(iq_{z}z)}\: dz
+\end{equation}
+in which $2/L$ is the intrinsic normalization factor for the special case of a quantum well. Energy spectrum $\mathcal{E}_{n}(\vec{k}_{\perp})$ here is expressed by 
+\begin{equation}
+    \mathcal{E}_{n}(\vec{k}_{\perp}) = \frac{\hbar^{2}}{2m^{*}} \left( k_{\perp}^{2} + k_{z}^{n^{2}} \right) = \hbar \Omega_{B} \left(N + \frac{1}{2}\right) + \left(\frac{\hbar^{2}}{2m^{*}} \frac{\pi^{2}n^{2}}{L^{2}}\right)
+\end{equation}
+where $\Omega_{B}=(eB)/(m^{*}c)$ is the cyclotron frequency of the external field. 
+
+To proceed with investigating the quantum effect and motions of the system given the above Hamiltonian, we will use the following commutative operator between the observable operators in the Hamiltonian, such as the following: 
+\begin{align}
+    \{ a_{i} ; a_{k}^{+} \} &= a_{i}a_{k}^{+} + a^{+}_{k}a_{i} = \delta_{ik} \\
+    \{ a_{i}^{+} ; a_{k}^{+} \} & = \{ a_{i}; a_{k} \} = 0 \\
+    \{ b_{i} , b_{k}^{+} \} & = b_{i}b^{+}_{k} - b_{k}^{+}b_{i} = \delta_{ik} \\
+    \{ b_{i}^{+}; b_{k}^{+} \} &= \{b_{i} ; b_{k}\} = 0
+\end{align}
+\subsection{Momentum operator solution}
+
+To investigate further of the interaction in the quantum well as well as constructing quantum-mechanical expression, we use the momentum operator expression for \textbf{particle number operator}. We have the following: 
+\begin{align}
+    i \hbar \frac{\partial f_{n, k_{\perp}}(t)}{\partial t} = \left\langle \left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; H \right] \right\rangle, \quad \quad f_{n, k_{\perp}} = \left\langle a^{+}_{n,\vec{k}_{\perp}} ; a_{n,\vec{k}_{\perp}} \right\rangle
+\end{align}
+
+Applying this for the first term (external force interaction): 
+\begin{align}
+    \left\langle \left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; H_{1} \right] \right\rangle & = \left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right)a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} \right] \\
+    & = \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right)\left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} \right]\\
+    & = S_{1}
+\end{align}
+Consider the commutator $\left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} \right]$, we have 
+\begin{equation}
+    \left[ a^{+}_{n,\vec{k}_{\perp}}  a_{n,\vec{k}_{\perp}}; a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} \right] = a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}'_{\perp}} \delta_{\vec{k}_{\perp},\vec{k}'_{\perp}} - a^{+}_{n,\vec{k}'_{\perp}} a_{n,\vec{k}_{\perp}} \delta_{\vec{k}'_{\perp},\vec{k}_{\perp}}
+\end{equation}
+
+Thereby, for the Kronecker delta being 
+
+\begin{align}
+    S_{1}
+    &= \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right) \left(a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}'_{\perp}} \delta_{\vec{k}_{\perp},\vec{k}'_{\perp}} - a^{+}_{n,\vec{k}'_{\perp}} a_{n,\vec{k}_{\perp}} \delta_{\vec{k}'_{\perp},\vec{k}_{\perp}}\right)\\
+    & = \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right) a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}'_{\perp}} \delta_{\vec{k}_{\perp},\vec{k}'_{\perp}} - \sum_{n,\vec{k}_{\perp}} \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right) a^{+}_{n,\vec{k}'_{\perp}} a_{n,\vec{k}_{\perp}} \delta_{\vec{k}'_{\perp},\vec{k}_{\perp}}\\
+    & = \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right)a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}'_{\perp}} - \mathcal{E}_{n}\left(\vec{k}_{\perp} - \frac{e}{\hbar c} \vec{A}(t)\right) a^{+}_{n,\vec{k}'_{\perp}} a_{n,\vec{k}_{\perp}}\\
+    & = 0
+\end{align}
+
+For the second term, we do the same operation:
+
+\begin{align}
+    S_{2} & = \left[ a^{+}_{n,\vec{k}_{\perp}}a_{n,\vec{k}_{\perp}} ; \sum_{\vec{q}} \hbar \omega_{\vec{q}} b^{+}_{\vec{q}}b_{\vec{q}} \right] \\
+    & = \hbar \sum_{\vec{q}} \omega_{\vec{q}} \left[ a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}}; b^{+}_{\vec{q}}b_{\vec{q}} \right] \\
+    & = 0
+\end{align}
+
+The third term can be calculated as followed. 
+
+\begin{align}
+    S_{2} 
+    & = \left[ a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} ; \sum_{\vec{q}} \sum_{n,n', \vec{k}_{\perp}} C_{\vec{q}} I_{n,n'}(q_{z}) a^{+}_{n',\vec{k}_{\perp}+\vec{q}} a_{n,\vec{k}_{\perp}} \left(b_{\vec{q}} + b^{+}_{- \vec{q}}\right)\right]\\
+    & = \sum_{\vec{q}} \sum_{n'n, \vec{k}_{\perp}} C_{\vec{q}} I_{n,n'}(q_{z}) \left[a^{+}_{n,\vec{k}_{\perp}} a_{n,\vec{k}_{\perp}} ; a^{+}_{n',\vec{k}'_{\perp}+\vec{q}} a_{n,\vec{k}'_{\perp}} \right] \left(b^{+}_{\vec{q}}+b_{\vec{q}}\right)
+\end{align}
+
+The expression of the commutator now can be simplified further down, using our identities. For now, we have, 
+\begin{align*}
+    & \left[a^+_{n, \vec{k_\bot}}a_{n, \vec{k_\bot}},a^+_{{n'}, \vec{k'_\bot}+ \vec{q}\bot} a_{n, \vec{k'_\bot}}\right] \\
+    = & a^+_{n, \vec{k_\bot}} a_{n, \vec{k_\bot}} a^+_{{n'}, \vec{k'_\bot}+\vec{q_1}} a_{n, \vec{k'_\bot}} - a^+_{{n'}, \vec{k'_\bot}+ \vec{q_1}} a_{n, \vec{k'_\bot}} a^+_{n, \vec{k_\bot}} a_{n, \vec{k_\bot}}\\
+    = &a^+_{n, \vec{k_\bot}} \left(\delta_{n,n',\vec{k_\bot},\vec{k'_\bot}+\vec{q_1}}-a^+_{{n'}, \vec{k'_\bot}+ \vec{q}_\bot}a_{n,\vec{k_\bot}}\right)a_{n, \vec{k'_\bot}}-a^+_{n', \vec{k'_\bot}+ \vec{q_1}}\left(\delta_{\vec{k'_\bot}, \vec{k_\bot}}-a^+_{n,\vec{k_\bot}}a_{n,\vec{k'_\bot}}\right)a_{n,k_\bot} \\
+    = & a^+_{n, \vec{k_\bot}} a_{n, \vec{k'_\bot}}\delta_{n,n', \vec{k_\bot}, \vec{k'_\bot} + \vec{q}_\bot}- a^+_{n, \vec{k_\bot}} a^+_{n', \vec{k'_\bot} + \vec{q}} a_{n, \vec{k_\bot}} a_{n, \vec{k'_\bot}} - a^+_{n', \vec{k'_\bot} + \vec{q}_\bot} \delta_{ \vec{k'_\bot}, \vec{k_\bot}} a_{n,\vec{k_\bot}} \\
+    &  - a^+_{n', \vec{k'_\bot} + \vec{q_1}} a^+_{n, \vec{k_\bot}}a_{n, \vec{k'_\bot}}a_{n, \vec{k_\bot}}\\
+    = & a^+_{n, \vec{k_\bot}}a_{n, \vec{k'_\bot}} \delta_{n,n', \vec{k_\bot}, \vec{k'_\bot} + \vec{q_1}} - a^+_{n', \vec{k'_\bot} + \vec{q_1}} a_{n, \vec{k_\bot}}\delta_{\vec{k'_\bot}, \vec{k_\bot}}\\   
+    \rightarrow S_3 =& \sum_{n,n'} \sum_{\vec{k'_\bot},\vec{q}} C\left(\vec{q}\right) I_{nn'} \left(q_z\right) \left(a^+_{n, \vec{k_\bot}}a_n, \vec{k'_\bot} \delta_{n,n', \vec{k_\bot}, \vec{k'_\bot} + \vec{q_1}} - a^+_{n', \vec{k'_\bot} + \vec{q_\bot }} a_{n, \vec{k_\bot}}\delta_{\vec{k'_\bot}, \vec{k_\bot}}\right)\left(b^+_{\vec{q}}+ b_{\vec{q}}\right)\\
+    & \delta_{n,n', \vec{k_\bot},\vec{k'_\bot}+\vec{q_1}}=0 \leftrightarrow \begin{cases}
+        n = n'\\
+        \vec{k_\bot} = \vec{k'_\bot} + \vec{q} \leftrightarrow \vec{k'_\bot} = \vec{k_\bot} - \vec{q}
+    \end{cases} \\
+    & \delta_{\vec{k'_\bot}, \vec{k_\bot}} = 1 \leftrightarrow \vec{k'_\bot} = \vec{k_\bot} \\
+    \rightarrow S_3 = & \sum_{\vec{k'_\bot},\vec{q}}C\left(\vec{q}\right) I_{n,n'} \left(q_z\right) \left(a^+_{n,\vec{k_\bot}}a_{n', \vec{k_\bot} -\vec{q_1}} - a^+_{n', \vec{k_\bot}+ \vec{q_1}}a_{n, \vec{k_\bot}}\right)\left(b^+_{\vec{q}}+ b_{\vec{q}}\right) \\
+    = &  \sum_{\vec{k'_\bot},\vec{q}}C\left(\vec{q}\right) I_{n,n'} \left(q_z\right) \left(a^+_{n, \vec{k_\bot}}a_{n', \vec{k_\bot}-\vec{q_1}} b^+_{-\vec{q}}+ a^+_{n, \vec{k_\bot}} a_{n', \vec{k_\bot} - \vec{q_1}}b_{\vec{q}} \right) \\
+    & + \left(-a^+_{n',\vec{k_\bot} + \vec{q_1}} a_{n, \vec{k_\bot}} b^+_{- \vec{q}}
+    - a^+_{n, \vec{k_\bot}}a_{n, \vec{k_\bot}}b_{\vec{q}} \right) \\
+    \rightarrow S_3 = & \sum_{q_\bot} \sum_{\vec{k'_\bot},\vec{q}}C\left(\vec{q}\right) I_{n,n'} \left(q_z\right) \left[\left(a^+_{n, \vec{k_\bot}}a_{n',\vec{k_\bot} - \vec{q_1}}b_{\vec{q}}\right)+ \left(a^+_{n', \vec{k_\bot}-\vec{q_1}}a_{n, \vec{k_\bot}}b_{-\vec{q}}\right)^* \right] \\
+    & - \left[\left(a^+_{n', \vec{k_\bot}+\vec{q}}a_{n, \vec{k_\bot}}b_{\vec{q}}\right)- \left(a^+_{n, \vec{k_\bot}}a_{n', \vec{k_\bot}+ \vec{q_1}}b_{-\vec{q}}\right)^*\right]
+\end{align*}
+
+
+Set $F_{n,\vec{k_{1\bot}},n', \vec{k_{2\bot}},\vec{q'^{(t)}}} = \langle a^+_{n, \vec{k_{1\bot}}}a_{n',\vec{k_2\bot}} b_{\vec{q'}}\rangle$:
+\begin{align*}
+    & \rightarrow \left\langle \left[a^+_{n, \vec{k_\bot}}a_{n,\vec{k_\bot}} \sum_{n,n'}\sum_{k'_\bot,\vec{q'}}C\left(\vec{q}\right)I_{nn'}\left(q_z\right)a^+_{n', \vec{k'_\bot}+\vec{q},\vec{k'_\bot}}\left(b^+_{-\vec{q}}+b_{\vec{q}}\right)\right]\right\rangle\\ 
+    & = -\sum_{q'} C\left(\vec{q}\right)I_{nn'}\left(q_z\right) \left[F_{n',\vec{k_\bot}+\vec{q_1},n,\vec{k_\bot,}\vec{q}}+F^*_{n,\vec{k_\bot},n',\vec{k_\bot}-\vec{q},\vec{q}}-F^*_{n',\vec{k_\bot}-\vec{q},n,\vec{k_\bot},-\vec{q}}\right]
+\end{align*}
+Getting the sum of 3 terms:
+\begin{align*}
+    \rightarrow i\hbar\dfrac{\partial f_{n, \vec{k_\bot}}\left(t\right)}{\partial t} = & -\sum_{q'} C\left(\vec{q}\right)I_{nn'}\left(q_z\right) \left[F_{n',\vec{k_\bot}+\vec{q_1},n,\vec{k_\bot,}\vec{q}}+F^*_{n,\vec{k_\bot},n',\vec{k_\bot}+\vec{q},-\vec{q}}\right]\\
+    & + \left[-F_{n,\vec{k_\bot},n',\vec{k_\bot}-\vec{q},\vec{q}}-F^*_{n',\vec{k_\bot}-\vec{q},n,\vec{k_\bot},-\vec{q}}\right]\\
+    \rightarrow \dfrac{\partial f_{n, \vec{k_\bot}}(t)}{\partial t} = & \dfrac{i}{\hbar} \sum_{\vec{q}} C\left(\vec{q}\right) I_{nn'} \left(q_z \right) \left[ F_{n', \vec{k_\bot}+\vec{q},n,\vec{k_\bot},\vec{q}}+ F^*_{n,
+    \vec{k_\bot},n',\vec{k_\bot}+\vec{q},-\vec{q}}\right] \\
+    & + \left[-F_{n,\vec{k_\bot},n', \vec{k_\bot}-\vec{q}, \vec{q}}- F^*_{n, \vec{k_\bot}-\vec{q}, n, \vec{k_\bot},-\vec{q}}\right]
+\end{align*}
+To proceed, we define the time-dependent correlation function $F_{n, \vec{k_{1\bot}}, n',\vec{k_{2\bot}},\vec{q'}}(t)$, which describes the expectation value of creating a particle in state $n,k_{1\bot}$, annihilating one in state $n', k_{2\bot}$, and absorbing a phonon with momentum $q'$. This quantity will allow us to rewtie tthe equation of motion in a more compact form:  $$F_{n, \vec{k_{1\bot}}, n',\vec{k_{2\bot}},\vec{q'}}(t)= \left\langle a^+_{n,\vec{k_{1\bot}}}a_{n', \vec{k_{2\bot}}}b_{\vec{q}} \right \rangle t$$ 
+Taking the time derivative of $F$ and applying the Heisenberg equation of motion yields the following commutator with the Hamiltonian $H$
+\begin{align*}
+    i \dfrac{\partial F}{\partial t} = &i \dfrac{\partial \left(a^+_{n, \vec{k_\bot}}, a_{n', \vec{k_{2\bot}}}b_{\vec{q}}\right)}{\partial t}\\
+    = & \langle [F,H] \rangle t= \left\langle\left[a^+_{n,\vec{k_{1\bot}}},a_{n', \vec{k_{2\bot}}}b_{\vec{q}},H\right] \right\rangle t
+\end{align*}
+The first contribution to the commutator, denoted $S_1$, arises from the single particle part of the Hamiltonian. Explicitly, it can be written as:
+\begin{align*}
+    S_1 = & \left \langle \left[a^+_{n,\vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{\vec{q'}}, \sum_{n,\vec{k_{3\bot}}}\mathcal{E}_{n} \left(\vec{k_{3\bot}}-\dfrac{e}{\hbar c}A(t)\right)a^+_{n,\vec{k_{3\bot}}}a_{n,\vec{k_{3\bot}}}\right] \right \rangle \\
+    = & \sum_{n,\vec{k_{3\bot}}}\mathcal{E}_{n}\left(\vec{k_{3\bot}}-\dfrac{e}{\hbar c}A(t)\right)  \left[a^+_{n,\vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{\vec{q'}},a^+_{n,\vec{k_{3\bot}}}a_{n,\vec{k_{3\bot}}} \right]  \\
+\end{align*}
+Computing the commutator of the operator, this gives: 
+\begin{align*}
+    & \left[a^+_{n,\vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{\vec{q'}},a^+_{n,\vec{k_{3\bot}}}a_{n,\vec{k_{3\bot}}} \right]\\
+     = & a^+_{n,\vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}a^+_{n, \vec{k_{3\bot}}}a_{n, \vec{k_{3\bot}}}b_{\vec{q'}}-a^+_{n,\vec{k_{3\bot}}}a_{n, \vec{k_{3\bot}}}a_na^+_{n, \vec{k_{1\bot}}}a_{n', \vec{k_{2\bot}}}b_{q'}\\
+     = & a^+_{n,\vec{k_{1\bot}}} \left(\delta_{n',n,\vec{k_{2\bot}}, \vec{k_{3\bot}}}-a^+_{n, \vec{k_{3\bot}}}a_{n',\vec{k_{3\bot}}k\vec{q}}-a^+_{n,\vec{k_{3\bot}},\vec{k_{1\bot}}}-a^+_{n, \vec{k_{1\bot}}}a_{n,\vec{k_{3\bot}}}\right) \times a_{n',\vec{k_{2\bot}}}b_{\vec{q}}\\
+     = & a^+_{n,\vec{k_{1\bot}}} a_{n, \vec{k_{3\bot}}}b_{\vec{q'}}\delta_{n',n, \vec{k_{2\bot}}, \vec{k_{3\bot}}}- a^+_{n, \vec{k_{3\bot}}}a_{n', \vec{k_{2\bot}}}b_{\vec{q'}} \delta_{n, \vec{k_{3\bot}}, \vec{k_{1\bot}}}
+\end{align*}
+After evaluating the commutator, we subtitute the result back into the expression for $S_1$, obtaining:
+\begin{align*}
+    \rightarrow S_1 = & \left\langle \sum_{n,\vec{k_{3\bot}}} \mathcal{E}_{n}\left(\vec{k_{3\bot}}-\dfrac{e}{\hbar c}A(t)\right) \left(a^+_{n,\vec{k_{1\bot}}} a_{n, \vec{k_{3\bot}}}b_{\vec{q'}}\delta_ {n',n, \vec{k_{2\bot}}, \vec{k_{3\bot}}}- a^+_{n, \vec{k_{3\bot}}}a_{n', \vec{k_{2\bot}}}b_{\vec{q'}}\delta_{n, \vec{k_{3\bot}}, \vec{k_{1\bot}}} \right)\right\rangle \\
+    & \delta\delta_{n,n', \vec{k_{2\bot}},\vec{k'_{3\bot}}}=1 \leftrightarrow \begin{cases}
+        n = n'\\
+        \vec{k_{2\bot}}= \vec{k_{3\bot}}\\
+    \end{cases} \\
+    & \delta_{n, \vec{k_{3\bot}}, \vec{k_{1\bot}}}= 1 \leftrightarrow \vec{k_{3\bot}} = \vec{k_{1\bot}}\\
+    \rightarrow S_1 = & \mathcal{E}_{n',\vec{k_{2\bot}}}\left(\vec{k_{2\bot}}-\dfrac{e}{\hbar c}A(t)\right)-\mathcal{E}_{n, \vec{k_{1\bot}}}\left(\vec{k_{1\bot}}-\dfrac{e}{\hbar c}A(t)\right)\left \langle a^+_{n, \vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}k\vec{q'}}\right \rangle t \\
+\end{align*}
+The second contribution, $S_2$, arises from the phonon Hamiltonian. Using the commutation relations for the phonon operators, we find:
+\begin{align*}
+        S_2 = & \left \langle \left[a^+_{n,\vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{\vec{q'}}, \sum_{q_\bot} \hbar \omega_{\vec{q_1}} b^+_{\vec{q_1}} b_{\vec{q_1}}\right] \right \rangle
+\end{align*}
+To compute this term, we evaluate and commutator between $a^+_{n,\vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{\vec{q'}}$ and $b^+_{\vec{q}\bot} b_{\vec{q_{\bot}}}$:
+\begin{align*}
+    & \left[a^+_{n,\vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{\vec{q'}},b^+_{\vec{q}\bot} b_{\vec{q_{\bot}}}\right] \\
+    =& a^+_{n, \vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{\vec{q'}}b^+_{\vec{q_\bot}}b_{\vec{q_1}} -b^+_{\vec{q_1}}b_{\vec{q_1}}a^+_{n,\vec{k_{1\bot}}}a_{n', \vec{k_{2\bot}}}b_{\vec{q'}}\\
+    = & a^+_{n, \vec{k_{1\bot}}} a_{n', \vec{k_{2\bot}}} \left(\delta_{\vec{q'},\vec{q_1}}+ b^+_{\vec{q_1}}b_{\vec{q'}}\right)-b^+_{\vec{q_1}}b_{\vec{q}_{\bot}} a^+_{n, \vec{k_{1\bot}}} a'_{n, \vec{k_{2\bot}}}b_{\vec{q'}} \\
+    = & a^+_{n, \vec{k_{1\bot}}}a_{n', \vec{k_{2\bot}}}b_{\vec{q_1}}\delta_{\vec{q'}, \vec{q_1}} \\
+    & \delta_{\vec{q'}, \vec{q_1}} = 1 \leftrightarrow \vec{q'} = \vec{q_1} \\
+    \rightarrow S_2 = & \hbar \omega_{q'} \left \langle a^+_{n, \vec{k_{1\bot}}}a_{n', \vec{k_{2\bot}}}b_{\vec{q'}}\right \rangle \\
+\end{align*}
+
+Finally, the third contribution, $S_3$, corresponds to the electron-phonon interaction. Its evaluation involves a double summation over intermediate states and phonon momenta. We can write it as:
+
+\begin{align*}
+        S_3 = & \left \langle \left[a^+_{n,\vec{k_{1\bot}}}a_{n'},b_{\vec{q'}} \sum_{n,n'}\sum_{\vec{k_{3\bot}},\vec{q_1}}C\left(\vec{q_1}\right)I_{n'n}\left(q_z\right) a^+_{n', \vec{k_{3\bot}}+\vec{q_1}}a_{n, \vec{k_{3\bot}}}\left(b^+_{-\vec{q_1}}+ b^+_{\vec{q_1}}\right)\right] \right \rangle
+\end{align*}
+This expression for $S_3$ contains two terms of opposite sign, the corresponding o phonon absorption and emission process.
+\begin{align*}
+    & \left[a^+_{n,\vec{k_{1\bot}}}a_{n',k_{\vec{k_{2\bot}}}}b_{\vec{q'}},a^+_{n', \vec{k_{3\bot}}+ \vec{q_1}} a_{n,\vec{k_{3\bot}}}\left(b^+_{-\vec{q_1}}+ b^+_{\vec{q_1}}\right)\right] \\
+     = & a^+_{n, \vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{q'}a^+_{n', \vec{k_{3\bot}}+\vec{q_1}}a_{n, \vec{k_{3\bot}}}\left(b^+_{ \vec{q_1}}b_{\vec{q_1}}\right) - a^+_{n', \vec{k_{3\bot}}+ \vec{q_1}}a_{n, \vec{k_{3\bot}}}\left(b^+_{-\vec{q_1}}+ b_{\vec{q}_{\bot}}\right) \\
+    & \times a^+_{n, \vec{k_{1\bot}}}a_{n', \vec{k_{2\bot}} k \vec{q}}\\
+  = & a^+_{n, \vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{q'}a^+_{n', \vec{k_{3\bot}}}b_{\vec{q_1}}+a^+_{n,\vec{k_{1\bot}}}a^+_{n', \vec{k_{3\bot}}+ \vec{q_1}}a_{n,\vec{k_{3\bot}}}b_{\vec{q'}}b^+_{-\vec{q_1}}\\
+     & - a^+_{n', \vec{k_{3\bot}} + \vec{q_1}}a_{n,\vec{k_{3\bot}}} \left(b^+_{-\vec{q_1}}+b_{\vec{q_1}}\right) a^+_{n, \vec{k_{1\bot}}}a_{n', \vec{k_{2\bot}}}b_{\vec{q'}}\\
+     = & a^+_{n, \vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}}b_{q'}a^+_{n', \vec{k_{3\bot}}}b_{\vec{q_1}}+a^+_{n,\vec{k_{1\bot}}}a^+_{n', \vec{k_{3\bot}}+ \vec{q_1}}a_{n,\vec{k_{3\bot}}}\left(\delta_{\vec{q'},-\vec{q_1}}+b^+_{-\vec{q_1}}b_{\vec{q'}} \right)\\
+     & - a^+_{n', \vec{k_{3\bot}} + \vec{q_1}}a_{n, \vec{k_{3\bot}}} \left(b^+_{-\vec{q_1}}+b_{\vec{q_1}}\right) a^+_{n, \vec{k_{1\bot}}}a_{n', \vec{k_{2\bot}}}b_{\vec{q'}}\\
+    = & a^+_{n, \vec{k_{1\bot}}} \left(\delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}}+ \vec{q_{1\bot}}}-a^+_{n', \vec{k_{3\bot}}+\vec{q_1}}a_{n',\vec{k_{2\bot}}}\right)a_{n, \vec{k_{3\bot}}}b_{\vec{q_1}}b_{\vec{q'}} \\
+    & + a^+_{n, \vec{k_{1\bot}}} \left(\delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}}+ \vec{q_{1\bot}}}- a^+_{n', \vec{k_{3\bot}}+\vec{q_{1\bot}}}a_{n',\vec{k_{2\bot}}}\right)a_{n, \vec{k_{3\bot}}}\left(\delta_{\vec{q'},-\vec{q_1}}+b^+_{-\vec{q_1}}b_{\vec{q'}}\right) \\
+\end{align*}
+\begin{align*}
+    &  - a^+_{n', \vec{k_{3\bot}} + \vec{q_1}}a_{n, \vec{k_{3\bot}}} \left(b^+_{-\vec{q_1}}+b_{\vec{q_1}}\right) a^+_{n,
+    \vec{k_{1\bot}}}a_{n', \vec{k_{2\bot}}}b_{\vec{q'}}\\
+    = & a^+_{n, \vec{k_{1\bot}}}a_{n, \vec{k_{3\bot}}} b_{\vec{q}_1} b_{\vec{q'}} \delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}} + \vec{q_1}}- a^+_{n, \vec{k_{1\bot}}}a^+_{n', \vec{k_{3\bot}}+ \vec{q_{1\bot}}}- a^+_{n', \vec{k_{3\bot}}+\vec{q_1}}a_{n',\vec{k_{2\bot}}}a_{n, \vec{k_{3\bot}}}b_{\vec{q_1}}b_{\vec{q'}} \\
+    & + a^+_{n, \vec{k_{1\bot}}}a_{n, \vec{k_{3\bot}}} \delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}} + \vec{q_{1\bot}}}\delta_{\vec{q'}, - \vec{q_1}}+ a^+_{n, \vec{k_{1\bot}}} a_{n, \vec{k_{3\bot}}} b^+_{- \vec{q_1\bot}}b_{\vec{q'}} \delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}} + \vec{q_{1\bot}}}\\
+    & - a^+_{n, \vec{k_{1\bot}}}a_{n,\vec{k_{3\bot}}} \delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}} + \vec{q_{1\bot}}}a_{n',\vec{k_{2\bot}} a_{n, \vec{k_{3\bot}}}}\delta_{\vec{q'},-\vec{q_1}}-a^+_{n, \vec{k_{1\bot}}} a^+_{n', \vec{k_{3\bot}} + \vec{q_{1\bot}}}a_{n', \vec{k_{2\bot}}} a_{n, \vec{k_{3\bot}}}b^+_{-\vec{q_1\bot}} b_{\vec{q'}} \\
+     & - a^+_{n', \vec{k_{3\bot}} + \vec{q_{1\bot}}}a_{n, \vec{k_{3\bot}}} \left(b^+_{- \vec{q_1}}+ b_{\vec{q}_{1\bot}}\right) a^+_{n, \vec{k_{1\bot}}} a_{n',\vec{k_{2\bot}}\vec{q'}}\\
+    = & a^+_{n, \vec{k_{1\bot}}}a_{n, \vec{k_{3\bot}}} b_{\vec{q}_{1}} b_{\vec{q'}} \delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}} + \vec{q_1}}- a^+_{n, \vec{k_{1\bot}}}a^+_{n', \vec{k_{3\bot}} + \vec{q_{1\bot}}} \left(\delta_{n , \vec{k_\bot}, \vec{k_{3\bot}}}- a_{n,\vec{k_{3\bot}}} a^+_{n, \vec{k_{1\bot}}}\right)a_{n', \vec{k_{2\bot}}} b_{\vec{q}_{1}} b_{\vec{q'}} \\
+     & - a^+_{n', \vec{k_{3\bot}} + \vec{q_{1\bot}}}\left(\delta_{n, \vec{k_{1\bot}}, \vec{k_{3\bot}}}- a_{n,\vec{k_{3\bot}}}a^+_{n, \vec{k_{1\bot}}}\right)a_{n', \vec{k_{2\bot}}} b^+_{-\vec{q_1}} b_{\vec{q'}} + a^+_{n, \vec{k_{1\bot}}} a^+_{n',\vec{k_{3\bot}}}\delta_{n', \vec{k_{3\bot}} + \vec{q_{1\bot}}}\delta_{\vec{q'}, -\vec{q_1}}\\
+    & - a_{n', \vec{k_{3\bot}} + \vec{q_1}}a_{n, \vec{k_{3\bot}}} \left(b^+_{-\vec{q_1}}+ b_{\vec{q}_{1}}\right) a^+_{n,\vec{k_{1\bot}}} a_{n', \vec{k_{2\bot}}} b_{\vec{q'}}\\
+    = & a^+_{n, \vec{k_{1\bot}}} a_{n, \vec{k_{3\bot}}} b_{\vec{q}_{1}} b_{\vec{q'}} \delta_{n', \vec{k_{2\bot}},\vec{k_{3\bot}} +\vec{q_{1 \bot}}}- a^+_{n', \vec{k_{3 \bot}} + \vec{q_{1\bot}}}a_{n', \vec{k_{2\bot}}} b^+_{\vec{q_{1\bot}}} b_{\vec{q'}} \delta_{n' \vec{k_\bot}, \vec{k_{3\bot}}} \\ 
+    & + a^+_{n,\vec{k_{1\bot}}}a^+_{n,\vec{k_{3\bot}}}\delta_{n',\vec{k_{2\bot}},\vec{k_{3\bot}}+\vec{q_{1\bot}}}\delta_{\vec{q'},-\vec{q_{1}}}+a^+_{n,\vec{k_{1\bot}}}a_{n,\vec{k_{3\bot}}}b^+_{-\vec{q_{1}}}b_{\vec{q'}}\delta_{n',\vec{k_{2\bot}},\vec{k_{3\bot}}+\vec{q_{1\bot}}} \\
+     & - a^+_{n\vec{k_{1\bot}},\vec{k_{3 \bot}}+\vec{q_{1 \bot}}}a_{n'+\vec{k_{2 \bot}}}a_{n,\vec{k_{3 \bot}}}\delta_{\vec{q'},-\vec{q_{1}}}-a^+_{n',\vec{k_{3 \bot}}+\vec{q_{1 \bot}}}a_{n',\vec{k_{2 \bot}}}b^+_{-\vec{q_{1}}}b_{\vec{q'}}\delta_{n,\vec{k_{1 \bot}},\vec{k_{3 \bot}}} \\
+    \rightarrow S_3 =&  \left \langle \sum_{n,n'} \sum_{\vec{k_{3\bot,}}\vec{q_1}}C\left(\vec{q_1}\right)I_{nn'}\left(q_z\right)a^+_{n, \vec{k_{1\bot}}} a_{n, \vec{k_{3\bot}}} b_{\vec{q}_{1}} b_{\vec{q'}} \delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}} + \vec{q_{1 \bot}}}\right. \notag \\
+     & - a^+_{n', \vec{k_{3 \bot}} + \vec{q_{1\bot}}}a_{n', \vec{k_{2\bot}}} b^+_{\vec{q}_1} b_{\vec{q'}} \delta_{n'\vec{k_\bot}, \vec{k_{3\bot}}}+ a^+_{n,\vec{k_{1\bot}}}a^+_{n,\vec{k_{3\bot}}}\delta_{n',\vec{k_{2\bot}},\vec{k_{3\bot}}+\vec{q_{1\bot}}}\delta_{\vec{q'},-\vec{q_{1}}} \\
+    & +a^+_{n,\vec{k_{1\bot}}}a_{n,\vec{k_{3\bot}}}b^+_{-\vec{q_{1}}}b_{\vec{q'}}- a^+_{n,\vec{k_{1\bot}},\vec{k_{3 \bot}}+\vec{q_{1 \bot}}}a_{n'+\vec{k_{2 \bot}}}a_{n,\vec{k_{3 \bot}}}\delta_{\vec{q'},-\vec{q_{1}}}-a^+_{n',\vec{k_{3 \bot}}+\vec{q_{1 \bot}}} \\
+    & -a^+_{n',\vec{k_{2 \bot}}}b^+_{-\vec{q_{1}}}b_{\vec{q'}}\delta_{n,\vec{k_{1 \bot}},\vec{k_{3 \bot}}}\rangle t
+\end{align*}
+Note:
+\begin{align*}
+    \delta_{\vec{q'}, -\vec{q_1}}= & 1 \leftrightarrow \vec{q'}= -\vec{q_1} \\
+    \delta_{n, \vec{k_{1\bot}}, \vec{k_{3\bot}}}=& 1 \leftrightarrow \vec{k_{1\bot}} = \vec{k_{3\bot}}\\
+    \delta_{n, \vec{k_{2\bot}}, \vec{k_{3\bot}} + \vec{q_1}}= & 1 \leftrightarrow \vec{k_{2\bot}} = \vec{k_{3\bot}} + \vec{q_1}
+\end{align*}
+It is important to notice that the conditions: $\vec{q'}= -\vec{q_1}, \vec{k_{2\bot}}=\vec{k_{3\bot}}+\vec{q_{1\bot}}\leftrightarrow\vec{q_{1\bot}}=\vec{k_{2\bot}}-\vec{k_{3\bot}}$ cannot be satisfied simultaneously, which can give a result: $\delta_{\vec{q'},-\vec{q_1}}= \delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}}+ \vec{q_1}} =1$
+\begin{align*}
+    \rightarrow \sum_{n,n'} \sum_{\vec{k_{3\bot}},q_{1\bot}} a^+_{n, \vec{k_{1\bot}}} a_{n, \vec{k_{3\bot}}} \delta_{n', \vec{k_{2\bot}}, \vec{k_{3\bot}} + \vec{q_1}}\delta_{\vec{q'}, - \vec{q_1}}= & \sum_{n,n'} \sum_{\vec{q_1}} a^+_{n, \vec{k_{1\bot}}} a_{n, \vec{k_{2\bot}} - \vec{q_{1\bot}}}\delta_{\vec{q'}, - \vec{q_1}}\\
+    = & \sum_{n,n'} a^+_{n, \vec{k_{1\bot}}} a_{n, \vec{k_{2\bot}} + \vec{q'_{\bot}}}
+\end{align*}
+\begin{align*}
+    \rightarrow S_3 = & - \sum_{n,n'} \sum_{k_{3\bot}} C \left(- \vec{q'}\right) I _{n,n'} \left(q_z\right) \left \langle a^+_{n, \vec{k_{1\bot}}} a^+_{n', \vec{k_{3\bot}} - \vec{q'_{\bot}}}a_{n', \vec{k_{2\bot}}} a_{n, \vec{k_{3\bot}}}\right \rangle t \\
+    & - \sum_{n,n'} \sum_{\vec{q_1}} C \left(q_\bot\right) I_{n n'} \left(q_z \right) \left \langle a^+_{n', \vec{k_{1\bot}} + \vec{q_{1\bot}}}a_{n', \vec{k_{2\bot}}}\left(b_{\vec{q_1}}+ b^+_{- q_1}\right) b_{\vec{q'}}\right \rangle t \\
+    & + \sum_{n,n'} \sum_{q_\bot} C \left(\vec{q_1} \right) I_{nn'} \left(q_z\right) \left \langle a^+_{n, \vec{k_{1\bot}}} a_{n, \vec{k_{2\bot}} - \vec{q_{1\bot}}}b_{\vec{q'}} \left(b_{\vec{q_1}}+b^+_{- \vec{q_1}}\right) \right \rangle t
+\end{align*}
+We now collect the three remaining contributions to the equation of motion. These terms correspond to (i) the free-particle energy difference, (ii) the interaction with the phonon field att momentum $-q$, and (iii) the interaction with the phonon field at momentum $q+$. Combining them yields: 
+\begin{align*}
+    \rightarrow i \dfrac{\partial F}{\partial t} = & - \left[\mathcal{E}_{n} \left(\vec{k_{1\bot}} - \dfrac{e}{C} \vec{A} (t) \right) - \mathcal{E}_{n} \left(\vec{k_{2\bot}}-\dfrac{e}{c} \vec{A}(t) \right)- \hbar \omega_{q'}\right] F(t) \\
+     & - \sum_{n,n'} \sum_{k_{3\bot}} C \left(- \vec{q'}\right) I _{n,n'} \left(q_z\right) \left \langle a^+_{n, \vec{k_{1\bot}}} a^+_{n', \vec{k_{3\bot}} - \vec{q'_{\bot}}}a_{n', \vec{k_{2\bot}}} a_{n, \vec{k_{3\bot}}}\right \rangle t \\
+    & - \sum_{n,n'} \sum_{\vec{q_{1\bot}}} C \left(\vec{q_1}\right) I_{n n'} \left(q_z \right) \left \langle a^+_{n', \vec{k_{1\bot}} + \vec{q_{1\bot}}} a_{n', \vec{k_{2\bot}}}\left(b_{\vec{q}_{1}}+ b^+_{-q_1}\right) b_{\vec{q'}}\right \rangle t \\
+    & + \sum_{n,n'} \sum_{\vec{q_{1\bot}}} C \left(\vec{q_1} \right) I_{nn'} \left(q_z\right) \left \langle a^+_{n, \vec{k_{1\bot}}} a_{n, \vec{k_{2\bot}} - \vec{q_{1\bot}}} b_{\vec{q'}} \left(b_{\vec{q_1}}+b^+_{- \vec{q_1}}\right) \right \rangle t \\
+   \rightarrow \dfrac{\partial F}{\partial t} = & i \left[\mathcal{E}_{n} \left(\vec{k_{1\bot}} - \dfrac{e}{C} \vec{A} (t) \right) - \mathcal{E}_{n'} \left(\vec{k_{2\bot}}-\dfrac{e}{c} \vec{A}(t) \right)- \hbar \omega_{q'}\right] F(t) \\
+   & + i \sum_{n,n'} \sum_{\vec{k_{3\bot}}} C \left(-\vec{q'}\right) I_{n'm} \left(\vec{q_z}\right) \left\langle a^+_{n, \vec{k_{1\bot}}}a^+_{n, \vec{k_{3\bot}} - \vec{q'_{\bot}}}a_{n', \vec{k_{2\bot}}} a_{n, \vec{k_{3\bot}}}\right\rangle t \\
+   & + i \sum_{n,n'} \sum_{\vec{k_{3\bot}}} C \left(-\vec{q'}\right) I_{n'm}\left(\vec{q_z}\right) \left\{\left\langle a^+_{n, \vec{k_{1\bot}} + \vec{q_{1\bot}}}a_{n', \vec{k_{2\bot}}}\left(b_{\vec{q}_1}+ b^+_{- \vec{q_1}}\right)\right\rangle t \right. \\
+   & -\left \langle a^+_{n, \vec{k_{1\bot}}} a_{n', \vec{k_{2\bot}} - q_{1\bot}}b_{\vec{q'}} \left(b_{\vec{q_1}}+ b^+_{- \vec{q_1}}\right)\right \rangle t\}
+\end{align*}
+Since $S_2$ is approximately equal to $f^2_n, \vec{k_\bot}$ and the electron occupation in the semiconductor is much smaller than unity $f_n,\vec{k_\bot} \ll 1$, this term is negligible. Consequently, the time-evolution equatiuon reduces to:
+\begin{align*}
+    \rightarrow i \dfrac{\partial F}{\partial t} = & - \left[\mathcal{E}_{n} \left(\vec{k_{1\bot}} - \dfrac{e}{C} \vec{A} (t) \right) - \mathcal{E}_{n} \left(\vec{k_{2\bot}}-\dfrac{e}{c} \vec{A}(t) \right)- \hbar \omega_{q'}\right] F(t) \\
+    & + i \sum_{n,n'} \sum_{\vec{k_{3\bot}}} C \left(-\vec{q'}\right) I_{n'm}\left(\vec{q_z}\right) \left\{\left\langle a^+_{n, \vec{k_{1\bot}} + \vec{q_{1}}} a_{n', \vec{k_{2\bot}}}\left(b_{\vec{q}_1}+ b^+_{- \vec{q_1}}\right)\right\rangle t \right. \\
+   & - \left \langle a^+_{n, \vec{k_{1\bot}}} a_{n', \vec{k_{2\bot}}- q_{1\bot}}b_{\vec{q'}} \left(b_{\vec{q}_1}+ b^+_{-\vec{q_1}}\right)\right \rangle t \}
+\end{align*}
+To fully specify the problem, we impose the boundary conditions and define the auxiliary quantities. In particular, at $t\to \infty$ the correlation function vanishes:
+\begin{align*}
+    & F_{n,\vec{k_{1\bot}}, n', \vec{k_{2\bot}},q'(t = \infty )} = 0 \\
+\end{align*}
+Furthermore, the electron and phonon distributions are defined as
+\begin{align*}
+    & f_n, \vec{k_{1}}(t) = \left \langle a^+_{n, \vec{k_{\bot}}}a_{n, \vec{k_\bot}} \right \rangle t \\
+    & \mathcal{N}_{\vec{q}}(t) = \left \langle b^+_{\vec{q}} b_{\vec{q}} \right\rangle t
+\end{align*}
+With these definitions, the correlations function can be written as a product.
+\begin{equation*}
+    \rightarrow F_{n, \vec{k_{1\bot}}, n', \vec{k_{2\bot}}, \vec{q'}}{(t)}= P(t) \cdot F (t)
+\end{equation*}
+where $P(t)$ is a known prefactor and $F(t)$ satisfies a nonhomogeneous differential equation. Where as $F(t)$ is the root of the homogeneous differential equation.
+
+
+Now we are moving on to solving the homogeneous differential equation which is $$\left( \mathcal{E}_{n,\vec{k_{1\bot}}} = \mathcal{E}_{n\times\vec{k_{1\bot}}}; \mathcal{E}_{n',\vec{k_{2\bot}}}=\mathcal{E}_{n'\times\vec{k_{2\bot}}}\right)$$
+\begin{align*}
+    \dfrac{\partial F}{\partial t} &= i \left[\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'} - \left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\dfrac{e}{\hbar c}A(t)\right] F(t)\\
+    \leftrightarrow \dfrac{\partial F}{F(t)}&= i \left[\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'} - \left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\dfrac{e}{\hbar c}\vec{A}(t)\right] g(t) \\
+    \leftrightarrow \dfrac{dF}{F(t)}&= i \left[\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'} - \left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\dfrac{e}{\hbar c}\vec{A}(t)\right] dt
+\end{align*}
+\newpage
+Setting the limit of the integral from $-\infty \to t$:
+\begin{align*}
+    \rightarrow \ln{F(t)} &= \int^t_{-\infty} i \left[\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'} - \left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\dfrac{e}{\hbar c}\vec{A}(t)\right] dt \\
+    \rightarrow F(T) & = \exp \left[i \left(\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'}\right) \int^t_{-\infty}dt'- \dfrac{ie}{\hbar c} \int^t_{-\infty}\left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\vec{A}(t')\right] dt
+\end{align*}
+
+We have that $F_{n, \vec{k_{1\bot}}, n',\vec{k_{2\bot}},\vec{q'}(t)} = P(t) F(t)$
+\begin{align*}
+    \rightarrow \dfrac{\partial F(t)}{\partial t } &= \dfrac{\partial P (t)}{\partial t} F (t) + P(t) \dfrac{\partial F(t)}{\partial t}\\
+    \rightarrow \dfrac{\partial F(t)}{\partial t} F(t) + P(t) \dfrac{\partial F(t)}{\partial t} & = i \left[\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'} - \left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\dfrac{e}{\hbar c}\vec{A}(t)\right] P(t) F(t) \\
+    & + i \sum_{n,n'} \sum_{q'_1} C \left(\vec{q_1}\right)I_{n'n}\left(q_z\right)\left\{\left\langle a^+_{n',\vec{k_{1\bot}}+\vec{q_1\bot}}a_{n',\vec{k_{2\bot}}}\left(b_{\vec{q_1}}+b^+_{-\vec{q_1}}\right)b\vec{q'}\right\rangle t \right. \\
+    & \left.-\left\langle a^+_{n,\vec{k_{1\bot}}} a_{n',\vec{k_{2\bot}}-\vec{q_{1\bot}}}b_{\vec{q'}}\left(b_{\vec{q_1}}+ b^+_{-\vec{q_1}}\right)\right\rangle t\right\}
+\end{align*}
+Simplifying the right side of $S_1$:
+\begin{align*}
+ \dfrac{\partial P(t)}{\partial t} F(t) = & i \sum_{n,n'}\sum_{\vec{q_{1\bot}}} C \left(\vec{q_1}\right) I_{n'n} \left(q_z\right) \left\{\left\langle a^+_{n',\vec{k_{1\bot}}+\vec{q_1\bot}}a_{n',\vec{k_{2\bot}}}\left(b_{\vec{q_1}}+b^+_{-\vec{q_1}}\right)b\vec{q'}\right\rangle t\right. \\
+    & \left.-\left\langle a^+_{n,\vec{k_{1\bot}}} a_{n',\vec{k_{2\bot}}-\vec{q_{1\bot}}}b_{\vec{q'}}\left(b_{\vec{q_1}}+ b^+_{-\vec{q_1}}\right)\right\rangle t\right\} \\
+\end{align*}
+Replacing the $F(t)$ in the function above, we can have: 
+\begin{align*}
+        \leftrightarrow &\dfrac{\partial P(t)}{\partial t} \exp \left[i \left(\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'}\right) \int^t_{-\infty}dt'- \dfrac{ie}{\hbar c} \int^t_{-\infty}\left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\vec{A}(t')dt'\right] \\
+        & = i \sum_{n,n'}\sum_{\vec{q_{1\bot}}} C \left(\vec{q_1}\right) I_{n'n} \left(q_z\right) \left\{\left\langle a^+_{n',\vec{k_{1\bot}}+\vec{q_1\bot}}a_{n',\vec{k_{2\bot}}}\left(b_{\vec{q_1}}+b^+_{-\vec{q_1}}\right)b\vec{q'}\right\rangle t \right. \\
+   & \left. - \left\langle  a^+_{n,\vec{k_{1\bot}}} a_{n',\vec{k_{2\bot}}-\vec{q_{1\bot}}}b_{\vec{q'}}\left(b_{\vec{q_1}}+ b^+_{-\vec{q_1}}\right)\right\rangle t_2\right\} \\
+   \leftrightarrow & \dfrac{\partial P(t)}{\partial t} = i \sum_{n,n'}\sum_{\vec{q_{1\bot}}} C \left(\vec{q_1}\right) I_{n'n} \left(q_z\right) \left\{\left\langle a^+_{n',\vec{k_{1\bot}}+\vec{q_1\bot}}a_{n',\vec{k_{2\bot}}}\left(b_{\vec{q_1}}+b^+_{-\vec{q_1}}\right)b\vec{q'}\right\rangle t_2 \right. \\
+   & \left. - \left\langle  a^+_{n,\vec{k_{1\bot}}} a_{n',\vec{k_{2\bot}}-\vec{q_{1\bot}}}b_{\vec{q'}}\left(b_{\vec{q_1}}+ b^+_{-\vec{q_1}}\right)\right\rangle t_2\right\} \\
+   & \times \exp \left[-i \left(\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'}\right) \int^t_{-\infty}dt'+ \dfrac{ie}{\hbar c} \int^t_{-\infty}\left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\vec{A}(t')dt'\right]
+\end{align*}
+Taking the integral from both sides with $U(t \to \infty)=0$ and $F(t\to \infty) = 0$ as the condition, we have:
+\begin{align*}
+   \rightarrow P(t) = & i \sum_{n,n'}\sum_{\vec{q_{1\bot}}} C \left(\vec{q_1}\right) I_{n'n} \left(q_z\right)\int^t_{-\infty} \left\{\left\langle a^+_{n',\vec{k_{1\bot}}+\vec{q_1\bot}}a_{n',\vec{k_{2\bot}}}\left(b_{\vec{q_1}}+b^+_{-\vec{q_1}}\right)b\vec{q'}\right\rangle t_2 \right. \\
+   & \left. - \left\langle  a^+_{n,\vec{k_{1\bot}}} a_{n',\vec{k_{2\bot}}-\vec{q_{1\bot}}}b_{\vec{q'}}\left(b_{\vec{q_1}}+ b^+_{-\vec{q_1}}\right)\right\rangle t_2\right\} \\
+   & \times \exp \left[-i \left(\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'}\right) \int^t_{-\infty}dt'+ \dfrac{ie}{\hbar c} \int^t_{-\infty}\left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\vec{A}(t')dt'\right]dt_2
+\end{align*}
+\newpage
+Replacing $P(t)$
+\begin{align*}
+    \to F_{n,\vec{k_{1\bot}},n',\vec{k_{2\bot}},\vec{q'}} = &i \sum_{n,n'}\sum_{\vec{q_{1\bot}}} C \left(\vec{q_1}\right) I_{n'n} \left(q_z\right)\int^t_{-\infty} \left\{\left\langle a^+_{n',\vec{k_{1\bot}}+\vec{q_1\bot}}a_{n',\vec{k_{2\bot}}}\left(b_{\vec{q_1}}+b^+_{-\vec{q_1}}\right)b\vec{q'}\right\rangle t_2 \right. \\
+   & \left. - \left\langle  a^+_{n,\vec{k_{1\bot}}} a_{n',\vec{k_{2\bot}}-\vec{q_{1\bot}}}b_{\vec{q'}}\left(b_{\vec{q_1}}+ b^+_{-\vec{q_1}}\right)\right\rangle t_2\right\} \\
+   & \times \exp \left[-i \left(\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'}\right) \int^t_{-\infty}dt'+ \dfrac{ie}{\hbar c} \int^t_{-\infty}\left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\vec{A}(t')dt'\right]dt_2 \\
+   & \times \exp \left[i \left(\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'}\right) \int^t_{-\infty}dt'- \dfrac{ie}{\hbar c} \int^t_{-\infty}\left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\vec{A}(t')dt'\right]
+\end{align*}
+Using some mathematical transformations:
+\begin{align*}
+    & \exp \left[-i \alpha \int^{t_{2}}_{-\infty}dt_1+ i\beta \int^{t}_{-\infty}\gamma(t_1)dt_1\right] \exp \left[i \alpha\int^t_{-\infty}dt_1-i\beta \int^t_{-\infty} \gamma(t_1)dt_1\right] \\
+    & = \exp \left\{i\alpha\left(t-t_2\right)- i\beta\int^t_{t_2}\gamma(t_1)dt_1\right\} \\
+    \to F_{n,\vec{k_{1\bot}},n',\vec{k_{k_{2\bot}}},\vec{q}}(t) &= i \sum_{n,n'}\sum_{\vec{q_{1\bot}}} C \left(\vec{q_1}\right)I_{n,n'}(q_z) \int^t_{-\infty} \left\{ \left \langle a^+_{n', \vec{k_{1\bot}},+\vec{q_1\bot}}a_{n',\vec{k_{2\bot}}}\left(b_{\vec{q_1}}+ b^+_{q_1}\right) b_{\vec{q'}} \right \rangle t_2\right. \\
+    & - \left. \left\langle a^+_{n,\vec{k_{1\bot}}}a_{n',\vec{k_{2\bot}}-\vec{q_{1\bot}}}\vec{b_{q'}}\left(b_{\vec{q_{1}}}+b^+_{-\vec{q_1}}\right)\right\rangle t_2\right\} \\
+    & \times\exp \left[i \left(\mathcal{E}_{n,\vec{k_{1\bot}}}- \mathcal{E}_{n,\vec{k_{2\bot}}}-\hbar\omega_{q'}\right) (t-t_2)- \dfrac{ie}{\hbar c} \int^t_{t_2}\left(\mathcal{E}_n -\mathcal{E}_{n'}\right)\vec{A}(t')dt'\right]
+\end{align*}
+Putting $\mathcal{E}_n-\mathcal{E}_{n'}\approx \dfrac{\hbar(\vec{k_{1\bot}}-\vec{k_{2\bot}}}{2m}\approx \dfrac{\hbar\vec{q_\bot}}{m}$. We have that \begin{align*}
+    \vec{A}(t)&= \dfrac{\vec{E_0}c}{\Omega}\cos{\Omega t}\\\to \int^t_{t_2}\vec{A}(t_1)dt_1&= \dfrac{\vec{E_0}c}{\Omega}(\sin{\omega t}-\sin{\Omega t_2}) 
+\end{align*}
+Replacing into the result after calculating $F_{n,\vec{k_{1\bot}},n',\vec{k_{2\bot}},\vec{q'}}(t)$ to $\dfrac{\partial f_{n,\vec{k_{\bot}}}(t)}{\partial t}$
+\begin{align*}
+    \to \dfrac{\partial f_{n,\vec{k_1}}(t)}{\partial t}  = &\dfrac{i^2}{\hbar}\sum_{n,n'}\sum_{\vec{q_{\bot}}}C\left(\vec{q}\right)C \left(\vec{q_1}\right) |I_{n',n} (q_z)|^2 \int^t_{-\infty} \left\{\left\langle a^+_{n,\vec{k_1}+\vec{q_{\bot}}+\vec{q_{1\bot}}} a_{n,\vec{k_\bot}} \left(b_{\vec{q_1}}+b^+_{\vec{-q_1}}\right)b_{\vec{q}}\right\rangle t_2  \right. \\
+   &  \left. \left\langle a^+_{n',\vec{k_\bot}+\vec{q}} a_{n',\vec{k_{\bot}}-\vec{q_{1\bot}}} b_{\vec{q}}\left(b_{\vec{q_1}}+ b^+_{-\vec{q_1}}\right)\right\rangle t_2 \right\}  \\
+   & \times \exp \left[ i \left(\mathcal{E}_{n',\vec{k_1}+\vec{q_{\bot}}}- \mathcal{E}_{n,\vec{k_1}}-\hbar\omega_{q}\right)(t-t_2) - \dfrac{i e}{mc}\int^t_{t2}\vec{q_{\bot}}\vec{A}(t_1) dt_1\right]  dt_2 \\
+   & + \int^t_{-\infty} \left\{ \left\langle a^+_{n,\vec{k_{\bot}}+\vec{q_{\bot}}-\vec{q_{1\bot}}}a_{n,\vec{k_{\bot}}}b_{-\vec{q}}\left(b_{\vec{q_1}}+ b^+_{-\vec{q_1}}\right)\right\rangle t_2  - \left\langle a^+_{n, \vec{k_{\bot}}+ \vec{q_{\bot}}}a_{n',\vec{k_{\bot}}+\vec{q_{1\bot}}}\left(b_{\vec{q_1}}+b^+_{-\vec{q_1}}\right)b_{-\vec{q}}\right\rangle t_2 \right \} \\
+   & \times \exp \left[i\left(\mathcal{E}_{n,\vec{k_{\bot}}}-\mathcal{E}_{n',\vec{k_{\bot}}+q_{\bot}}-\hbar\omega_{-q}\right)(t-t_2) - \dfrac{ie}{mc} \int^t_{t_2} \vec{q_{\bot}} \vec{A}(t)dt_1 \right ] dt_2 \\
+   & - \int^t_{-\infty} \left \{ \left \langle a^+_{n',\vec{k_\bot}+\vec{q_{1\bot}}}a_{n',\vec{k_\bot}-\vec{q_\bot}}\left (b_{q_1}+b^+_{-q_1}\right)b_{\vec{q}}\right\rangle t_2- \left\langle a^+_{n,\vec{k_{\bot}}}a_{n,\vec{k_\bot}-\vec{q_\bot}-\vec{q_{1\bot}}}b_{\vec{q}}\left(b_{\vec{q_1}}+b^+_{-\vec{q_1}}\right)\right\rangle t_2\right\} \\
+   & \times \exp \left[i \left(\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\hbar\omega_q\right)(t-t_2) -\dfrac{ie}{mc}\int^t_{t_2}\vec{q_\bot}\vec{A}(t_1)dt_1 \right] dt_2  \\
+   & - \int^t_{-\infty} \left\{\left\langle a^+_{n,\vec{k_\bot}}a_{n,\vec{k_\bot}-\vec{q_\bot}+\vec{q_{1\bot}}}\left(b_{\vec{q_1}}+b^+_{-\vec{q_1}}\right)b_{-\vec{q}}\right\rangle t_2 + \left\langle a^+_{n,\vec{k_\bot}-\vec{q_{1\bot}}}a_{n,\vec{k_1}-\vec{q_\bot}} b_{-\vec{q}} \left(b_{\vec{q_1}}+ b^+_{-\vec{q_1}}\right) \right\rangle t_2 \right\} \\
+   & \times \exp\left[i \left(\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{-q}(t-t_2) \right)-\dfrac{ie}{mc} \int^t_{t_2}\vec{q_\bot} \vec{A}(t_1)\right] dt_1
+\end{align*}
+\newpage
+Using the second-order approximation with respect to the electromagnetic–phonon interaction constant 
+\begin{align*}
+    & \text{With }S_1, S_3 \text{ replace with } 
+    \begin{cases}
+        \vec{q_1}= -\vec{q} \\
+        \vec{q_{1\bot}} = - \vec{q_\bot} 
+    \end{cases} \\
+ & \text{With } S_2, S_4 \text{ replace with }
+ \begin{cases}
+     \vec{q_1} = \vec{q}\\
+     \vec{q_{1\bot}} = \vec{q_\bot}
+ \end{cases}
+\end{align*}
+\begin{align*}
+    \to \dfrac{\partial f_{n,l_\bot}(t)}{\partial t} & = \dfrac{-1}{\hbar}\sum_{n,n'}\sum_{\vec{q_\bot}} |(\vec{q})|^2 \left| I_{n,n'}(q_z) \right|^2 \int^t_{-\infty} \left\{\left\langle a^+_{n,k_\bot}a_{n,\vec{k_\bot}}\left(b_{-\vec{q}}+ b^+_{\vec{q}}\right)b_{\vec{q}} \right\rangle t_2 \right. \\
+    & \left.\left\langle a^+_{n', \vec{k_\bot}+\vec{q}}a_{n',\vec{k_\bot}+\vec{q_\bot}}\left(b_{-\vec{q}}+b^+_{\vec{q}}\right)\right\rangle t_2 \right\} \\
+    & \times \exp \left[i \left(\mathcal{E}_{n'\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}} - \hbar\omega_{\vec{q}}\right)(t-t_2) - \dfrac{ie}{mc} \int^t_{t_2} \vec{q_\bot}\vec{A}(t_1)dt_1 \right] dt_2 \\
+    & +\int^t_{-\infty}\left\{- \left\langle a^+_{n',\vec{k_\bot}+\vec{q_\bot}}a_{n',\vec{k_\bot}+\vec{q_\bot}}\left(b_{\vec{q}}+b^+_{-\vec{q}} \right)b_{-\vec{q}} \right\rangle t_2+ \left\langle a^+_{n,\vec{k_\bot}}a_{n,\vec{k_\bot}} b_{-\vec{q}}\left(b_{\vec{q}} + b^+_{-\vec{q}} \right) \right\rangle t_2\right\} \\
+    & \times \exp \left[i \left(\mathcal{E}_{n,\vec{k_\bot}} - \mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}} -\hbar\omega_{-\vec{q}} \right)(t-t_2) -\dfrac{ie}{mc} \int^t_{t_2}\vec{q_\bot}\vec{A}(t_1) dt_1\right] dt_2 \\
+    & -\int^t_{-\infty} \left\{\left\langle a^+_{n',\vec{k_\bot}-\vec{q_\bot}}a_{n',\vec{k_\bot}-\vec{q_\bot}}\left(b_{-\vec{q}}+b^+_{\vec{q}} \right)b_{\vec{q}} \right\rangle t_2- \left\langle a^+_{n,\vec{k_\bot}} a_{n,\vec{k_\bot}} b_{\vec{q}} \left(b_{-\vec{q}}+ b^+_{\vec{q}} \right) \right\rangle t_2 \right\}\\
+    & \times \exp \left[i \left(\mathcal{E}_{n,\vec{k_\bot}}- \mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}- \hbar\omega_{\vec{q}} \right) (t-t_2) -\dfrac{ie}{mc}\int^t_{t_2} \vec{q_\bot} \vec{A}(t_1) dt_1 \right] dt_2 \\
+    & - \int^t_{-\infty} \left\{\left\langle a^+_{n,\vec{k_\bot}} a_{n,\vec{k_\bot}} \left(b_{\vec{q}} + b^+_{-\vec{q}} \right)b_{-\vec{q}} \right\rangle t_2 + \left\langle a^+_{n',\vec{k_\bot}-\vec{q_\bot}}a_{n',\vec{k_\bot}-\vec{q}} b_{-\vec{q}}\left(b_{\vec{q}}+b^+_{-\vec{q}} \right) \right\rangle t_2 \right\} \\
+    & \times \exp \left[i \left(\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{-\vec{q}} \right)(t-t_2) - \dfrac{ie}{mc} \int^{t}_{t_2} \vec{q_\bot}\vec{A}(t_1)dt_1\right] dt_2
+\end{align*}
+Photon's frequency: $\omega_{\vec{q}}=\omega_{-\vec{q}}$
+Note: 
+\begin{align*}
+    f_{n,\vec{k_\bot}}(t) & = \left\langle a^+_{n,\vec{k_\bot}} a_{n,\vec{k_\bot}} \right\rangle \\
+    \mu_{\vec{q}}(t) &= \left\langle b^+_{\vec{q}}b_{\vec{q}} \right\rangle t \\
+    \mu_{\vec{q}+1} & = \left\langle b_{\vec{q}} b^+_{\vec{q}} \right\rangle \text{ because } b_{\vec{q}} b^+_{\vec{q}} = b^+_{\vec{q}}b_{\vec{q}+1}
+\end{align*}
+Using mathematical transformations: 
+\begin{align*}
+    \exp (\pm i z \sin{\varphi}) = \sum^{\infty}_{n=-\infty} J_m(z) \exp(\pm i m \varphi)
+\end{align*}
+Where $J_m(z)$ is the Bessel function of the first kind of integer order m. Having: 
+\begin{align*}
+    \exp\left[ -\dfrac{ie}{mc}\vec{q_{\bot}}\int^t_{t_2}\vec{A}(t_1)dt_1 \right] & = \exp\left[ i \dfrac{e\vec{E}_0 \vec{q_\bot}}{m r^2}(\sin{rt_2}+\sin(-rt) \right] \\
+    & = \sum^{\infty}_{S= -\infty} \sum^{\infty}_{l = -\infty} J_s \left(\dfrac{e\vec{E}_0 \vec{q_\bot}}{mr^2} \right)J_l \left(\dfrac{e\vec{E}_0\vec{q_\bot}}{mr^2} \right)\exp (-iSrt) \exp(ilrt_2)\\
+    & = \sum^{\infty}_{S= -\infty} \sum^{\infty}_{l = -\infty} J_s \left[\dfrac{e\vec{E}_0 \vec{q_\bot}}{mr^2} J_l \dfrac{e\vec{E}_0\vec{q_\bot}}{mr^2} \exp(i(l-S) rt - ilr (t-t_2) \right]
+\end{align*}
+\newpage 
+Replacing $\dfrac{\partial f_{n,\vec{k_\bot}}}{\partial t}$ and eliminating $\left\langle b^+_{-\vec{q}}b^+_{\vec{q}} \right\rangle t_2, \left\langle b_{\vec{q}} b_{-\vec{q}} \right\rangle t_2 $
+\begin{align*}
+    \to \dfrac{\partial f_{n,\vec{k_\bot}}(t)}{\partial t} =& \dfrac{-1}{\hbar} \sum_{n,n'}\sum_{\vec{q}} \left| C(\vec{q}) \right|^2 \left|I_{n'n}(q_z) \right|^2 \sum^{\infty}_{S,l = - \infty} J_S \left( \dfrac{l\vec{E_0}\vec{q}}{mr^2}\right) J_l \left(\dfrac{l\vec{E_0}\vec{q}}{mr^2}\right) \exp [i(l-S)rt] \\
+    &\times \int^t_{-\infty}dt' \left\{\left[f_{n,\vec{k_\bot}} \mathcal{N}_{\vec{q}} - f_{n',\vec{k_\bot}+\vec{q_\bot}}(\mathcal{N}_{\vec{q}}+1) \right] \exp\left[i\left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q}} - \mathcal{E}_{n,\vec{k_\bot}} - \hbar\omega_{\vec{q}}-\hbar lr +i\delta\hbar\right) (t-t')  \right] \right. \\
+    & + \left[f_{n,\vec{k_{\bot}}} (\mathcal{N}_{-\vec{q}}+1) - f_{n',\vec{k_\bot}+\vec{q_\bot}}\mathcal{N}_{-\vec{q}} \right]\times \exp\left[i \left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_{\bot}}} -\mathcal{E}_{n,\vec{k_\bot}} + \hbar\omega_{\vec{q}}-l\hbar r+ i\delta\hbar \right)(t-t') \right] \\
+    & - \left[f_{n',\vec{k_\bot}-\vec{q_\bot}}\mathcal{N}_{\vec{q}} - f_{n,\vec{k_\bot}}(\mathcal{N}_{\vec{q}}+1) \right] \times \exp\left[i\left(\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\hbar\omega_{\vec{q}} - l\hbar r+i\delta\hbar \right) (t-t') \right] \\
+     & - \left. \left[f_{n',\vec{k_\bot}-\vec{q_\bot}}(\mathcal{N}_{-\vec{q}}+1)- f_{n,\vec{k_\bot}}\mathcal{N}_{-\vec{q}} \right] \times \exp \left[i \left(\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}+\hbar\omega_{\vec{q}}-l\hbar r+ i \delta \hbar \right)(t-t') \right] \right \} 
+\end{align*}
+Due to crystal symmetry: $\mathcal{N}_{\vec{q}} = \mathcal{N}_{\vec{q}}$
+\begin{align*}
+    \to \dfrac{\partial f_{n,k_\bot} (t)}{\partial t}=&-\dfrac{1}{\hbar}\sum_{n,n'}\sum_{\vec{q_\bot}}\left|C\left(\vec{q} \right)\right|^2 \left|I_{n,n'}(q_z) \right|^2 \sum^{\infty}_{S,l = -\infty}J_S\left(\dfrac{l\vec{E_0}\vec{q_\bot}}{mr^2} \right) J_l\left(\dfrac{l\vec{E_0}\vec{q_\bot}}{mr^2} \right) \exp[i(l-S) rt] \\
+    & \times\int^t_{-\infty}dt' \left\{\left[f_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}-f_{n',\vec{k_\bot}+\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right] \times \exp\left[i \left(\mathcal{E}_{n',\vec{k_\bot},\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega_{\vec{q}}-l\hbar r + i\delta\hbar \right)(t-t') \right] \right\} \\
+    & + \left[f_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1\right)-f_{n',\vec{k_\bot}+\vec{q_\bot}}\mathcal{N}_{\vec{q}} \right] \times\exp\left[i \left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega\vec{q}-l\hbar r + i \delta\hbar \right) (t-t') \right] \\
+    & - \left[f_{n',\vec{k_\bot}-\vec{q_\bot}}\mathcal{N}_{\vec{q}}-f_{n,k\bot} \left(\mathcal{N}_{\vec{q}}+1\right) \right]\times \exp \left[i\left(\mathcal{E}_{n.\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r + i\delta\hbar \right)(t-t') \right] \\
+    & - \left[f_{n',\vec{k_\bot}-\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) -f_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}} \right] \times \exp \left[i \left(\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}} + \hbar\omega_{\vec{q}}+\hbar\omega_{\vec{q}}-l\hbar r + i\delta\hbar \right)(t-t') \right]
+\end{align*}
+Absorbing coefficience: $$\alpha= \dfrac{8\pi}{c\sqrt{\mathcal{X}_{\infty}}E^2_0}\left\langle\vec{J}(t), \vec{E_0}\sin{rt} \right\rangle$$
+With $(\mathcal{X}_{-\infty}): \text{ high-efficient electricity constant.}$
+$J(t)$ is coupling current density: $$J(t) = \dfrac{e\hbar}{m}\sum_{n,\vec{k_\bot}}\left(  \vec{k_\bot-\dfrac{e}{\hbar c}} \vec{A}(t) \right)f_{n,\vec{k_\bot}}(t)$$
+
+Because of the strong interaction between phonons and electrons, the nonequilibrium distribution functions can be approximated by the equilibrium distribution functions as follows: $$f_{n,\vec{k_\bot}}\approx \bar{f}_{n,\vec{k_\bot}}; f_{n',\vec{k_\bot}+\vec{q_\bot}} \approx 
+\bar{f}_{n',\vec{k_{\bot}}+\vec{q_\bot}} \text{ Putting S - l = k} $$
+
+\begin{align*}
+    \dfrac{\partial f_{n.\vec{k_\bot}}(t)}{\partial t} = & -\dfrac{1}{\hbar}\sum_{n,n'}\sum_{\vec{q_\bot}} \left | C(\vec{q}) \right |^2 \left|I_{n'n} (q_z) \right|^2 \sum^{\infty}_{S,l=- \infty} J_S \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right)J_l \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right) \exp [-ikrt] \\
+    & \times \int^t_{-\infty} dt^2 \left\{\left[\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n',\vec{k_\bot}+\vec{q_{\bot}}}\left(\mathcal{N}_{\vec{q}}+1 \right)\right]\times\exp\left[i \left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+i\delta\hbar \right)(t-t') \right] \right.\\ 
+    & + \left[\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)- \bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\mathcal{N}_{\vec{q}} \right]\times\exp\left[i \left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega_{\vec{q}}-l\hbar r + i\delta\hbar \right)(t-t') \right]\\
+    & - \left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right] \times\exp\left[i \left(\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r + i\delta\hbar \right)(t-t') \right] \\
+    & - \left.\left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n,\vec{k_{\bot}}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right] \times \exp \left[i\left(\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r + i\delta\hbar \right)(t-t') \right]\right\}\\
+\end{align*}
+Note: $\delta$ is an infinitesimal term arises from the adiabatic interaction of the electromagnetic wave.
+\newpage
+Integrating both sides with respect to t.
+\begin{align*}
+    \to f_{n,\vec{k_\bot}}(t) =& - \dfrac{1}{\hbar} \int dt \sum_{n,n'}\sum_{\vec{q_\bot}}\left|C(\vec{q}) \right|^2 \left|I_{n'n} (q_z)\right|^2 \sum^{\infty}_{S,l = - \infty}J_S \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right)J_l \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right) \exp(-ikrt) \\
+    & \times\int^t_{-\infty} dt' \left\{\left[\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right]\times\exp\left[i\left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+i\delta\hbar \right)(t-t') \right] \right. \\
+    & + \left[\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) - \bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\mathcal{N}_{\vec{q}} \right] \times \exp \left[i \left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega_{\vec{q}}-l\hbar r + i\delta
+    \hbar \right)(t-t') \right]\\
+    & - \left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right] \times \exp \left[i \left(\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}} -\hbar\omega_{\vec{q}}-l\hbar r+ i\delta\hbar \right)(t-t') \right] \\
+    &- \left. \left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)-\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}} \right] \times \exp \left[i \left(\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}} +\hbar\omega_{\vec{q}}-l\hbar r+ i\delta\hbar \right)(t-t') \right]\right\}
+\end{align*}
+Because of $\bar{f}_{n,\vec{k_\bot}},\bar{f}_{n,\vec{k_\bot}+\vec{q}},\mathcal{N}_{\vec{q}}$ do not depend on $t'$, we can eliminate t out of $dt'$. Analyzing:
+\begin{align*}
+    & \int^t_{-\infty}dt' \left[-i\left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}} -\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+ i\delta \right)t' \right] \\
+    & = \left. \dfrac{\exp\left[-i\left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}} -\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+ i\delta \right)t' \right]}{-i\left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}} -\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+ i\delta  \right)} \right|^t_{-\infty}\\
+    & = \dfrac{i\exp\left[-i\left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}} -\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+ i\delta \right)t' \right]}{\left(\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}} -\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+ i\delta  \right)}
+\end{align*}
+Therefore, we got $f_{n,\vec{k_\bot}}(t)$
+\begin{align*}
+    f_{n,\vec{k_\bot}}(t) = &-\dfrac{i}{\hbar} \int dt \sum_{n,n'}\sum_{\vec{q_\bot}}\left|C\left(\vec{q} \right) \right|^2 \left|I_{n'n}\left(q_z \right) \right|^2 \sum^{\infty}_{S,l=-\infty}J_S \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right)J_l \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right) \exp(-ikrt) \\ 
+    & \times \left\{\left[\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right]\times\dfrac{1}{\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}+\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+i\hbar\delta} \right. \\
+    & + \left[\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\mathcal{N}_{\vec{q}} \right]\times\dfrac{1}{\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega_{\vec{q}}-l\hbar r+i\hbar\delta}\\
+    & - \left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right] \times \dfrac{1}{\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+i\hbar\delta}\\
+    & - \left.\left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1\right)-\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}} \right]-\dfrac{1}{\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}+\hbar\omega_{\vec{q}}-l\hbar r + i\hbar\delta}\right\}\\
+    \to f_{n,\vec{k_\bot}}(t) = & - \dfrac{1}{k \hbar r}\sum_{n,n'}\sum_{\vec{q_\bot}}\left|C\left(\vec{q} \right) \right|^2 \left|I_{n'n}\left(q_z \right) \right|^2 \sum^{\infty}_{S,l=-\infty}J_S \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right)J_l \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right) \exp(-ikrt) \\  
+    &\times \left\{-\dfrac{\left[\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right]}{\mathcal{E}_{n',\vec{q_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r + i\hbar\delta}-\dfrac{\left[\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\mathcal{N}_{\vec{q}} \right]}{\mathcal{E}_{n',\vec{k_\bot}}+\vec{q_\bot}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega_{\vec{q}}-l\hbar r+i\hbar\delta} \right. \\
+    & + \left. \dfrac{\left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right]}{\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r + i\hbar\delta} + \dfrac{\left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)-\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}} \right]}{\mathcal{E}_{n,\vec{k_\bot}}-\mathcal{E}_{n'.\vec{k_\bot}-\vec{q_\bot}}+\hbar\omega_{\vec{q}}-l\hbar r + i\hbar\delta} \right\} \\
+        & = \dfrac{1}{k\hbar r}\sum_{n,n'}\sum_{\vec{q_\bot}}\left|C\left(\vec{q}\right) \right|^2\left|I_{n'n}\left(q_z \right) \right|^2\sum^{\infty}_{S,l=-\infty} J_S \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right)J_l \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right) \exp(-ikrt) \\
+    &\times \left\{\dfrac{\left[\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right]}{\mathcal{E}_{n',\vec{q_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r + i\hbar\delta}+\dfrac{\left[\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\mathcal{N}_{\vec{q}} \right]}{\mathcal{E}_{n',\vec{k_\bot}}+\vec{q_\bot}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega_{\vec{q}}-l\hbar r+i\hbar\delta} \right. \\
+\end{align*}
+\begin{align*}
+    \phantom{\to f_{n,\vec{k_\bot}}=\dfrac{1}{k\hbar r}}+ \left. \dfrac{\left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right) \right]}{\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega_{\vec{q}}+l\hbar r - i\hbar\delta} + \dfrac{\left[\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)-\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}} \right]}{\mathcal{E}_{n'.\vec{k_\bot}-\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}+l\hbar r - i\hbar\delta} \right\} \\
+\end{align*}
+We have the expression for current density, replacing $f_{n,\vec{k_\bot}}(t)$ into the expression:
+\begin{align*}
+    \to J(t) = & \dfrac{e\hbar}{m} \sum_{n,k_\bot}\left(\vec{k_\bot}-\dfrac{e}{\hbar c} \vec{A}(t)\right) f_{n,\vec{k_\bot}}(t) \\
+     = & \dfrac{e\hbar}{m}\sum_{n,\vec{k_\bot}}\vec{k_\bot}f_{n\vec{k_\bot}}-\dfrac{e^2}{mc}\sum_{n,\vec{k_\bot}}A(t)f_{n,\vec{k_\bot}}(t)\\
+     \text{Having } & \vec{A}(t) = \dfrac{\vec{E_0}c}{r}\cos{rt}\\
+     & \to J(t) = \dfrac{e\hbar}{m}\sum_{n,k_\bot}k_\bot f_{n,k_\bot}-\dfrac{e^2\vec{E_0}}{mr} \cos{rt} \sum_{n,k_\bot}f_{n,k_\bot}(t)
+\end{align*}
+Let's consider the expression: 
+\begin{align*}
+    \dfrac{e\hbar}{m}\sum_{n,k_\bot}\vec{k_\bot}f_{n,\vec{k_\bot}} =&  \dfrac{e}{mkr}\sum_{n,n'}\sum_{\vec{q}}\left|C\left(\vec{q} \right) \right|^2\sum^{\infty}_{S,l=-\infty}J_S \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right)J_l \left(\dfrac{l\vec{E}_0\vec{q_\bot}}{mr^2} \right) \exp(-ikrt)\\
+    &\times \sum_{n,k_\bot}\vec{k_\bot}\times\left\{\dfrac{\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1\right)}{\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}-l\hbar r+i\hbar\delta} + \dfrac{\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)-\bar{f}_{n',\vec{k_\bot}+\vec{q}}+\mathcal{N}_{\vec{q}}}{\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega_{\vec{q}}-l\hbar+i\hbar\delta}\right.\\
+    &\left.+\dfrac{\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n,\vec{k_\bot}}\left(\mathcal{N}_{\vec{q}}+1\right)}{\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}+\hbar\omega_{\vec{q}}+l\hbar r-i\hbar\delta} + \dfrac{\bar{f}_{n',\vec{k_\bot}-\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1\right)-\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}}{\mathcal{E}_{n',\vec{k_\bot}-\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{\vec{q}}+l\hbar r-i\hbar\delta}\right\}
+\end{align*}
+Replacing: $S\to l +k $
+Changing the variable: Changing $\vec{k_\bot}-\vec{q_\bot}=\vec{k_\bot},\vec{k_\bot}=\vec{k_\bot}+\vec{q_\bot},\vec{q_\bot}=-\vec{q_\bot}$
+Note: $C\left(\vec{q}\right)=C\left(-\vec{q}\right),\mathcal{N}_{\vec{q}}=\mathcal{N}_{-\vec{q}},n\to n',n'\to n$
+We obtain the terms in the above expression as follows:
+\begin{align*}
+    S_1=&\sum_{n,n'}\sum_{\vec{q_\bot}}\sum_{k,l}\left|C\left(\vec{q}\right) \right|^2\left|I_{nn'}\left(q_z \right) \right|^2 J_{l+k} \left(\dfrac{e\vec{E_0}\vec{q}}{mr^2}\right)J_{l} \left(\dfrac{e\vec{E_0}\vec{q}}{mr^2}\right)\exp(-i\hbar r t)\\
+    & \times\sum_{n,\vec{k_\bot}}\vec{k_\bot}\times\left\{\dfrac{\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)}{\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{-\vec{q}}-l\hbar r+i\hbar\delta}\right\}\\
+    = &\sum_{n,n'}\sum_{\vec{q_\bot}}\left|C\left(\vec{q}\right) \right|^2\left|I_{nn'}\left(q_z \right) \right|^2\sum_{k,l}\exp(-i\hbar r t)\sum_{n,k_\bot}\vec{k_\bot} J_{l+k} \left(-\dfrac{eE_0q}{mr^2}\right)J_{l} \left(-\dfrac{eE_0q}{mr^2}\right)\\
+    &\times\left\{\dfrac{\bar{f}_{n,\vec{k_\bot}}\mathcal{N}_{\vec{q}}-\bar{f}_{n',\vec{k_\bot}+\vec{q_\bot}}\left(\mathcal{N}_{\vec{q}}+1 \right)}{\mathcal{E}_{n',\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n,\vec{k_\bot}}-\hbar\omega_{-\vec{q}}-l\hbar r+i\hbar\delta}\right\}
+\end{align*}
+Apply the Bessel function property:$J_{-\mu}(x)=(-1)^\mu=J_\mu=(-x)$
+\begin{align*}
+\rightarrow S_1 &= \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C_{\vec{q}}|^2 |I_{n'n}(q_z)|^2 \sum_{k,l} \exp(-ikrt) \sum_{l} (-1)^l (-1)^{l+k} J_{l+k} \left( \frac{-e\vec{E_0} \vec{q}}{m r^2} \right) J_l \left( \frac{e\vec{E_0} \vec{q}}{m r^2} \right) \\
+&\quad \times \left\{-\frac{\bar{f}_{n';\vec{k_\bot}+\vec{q}} (\mathcal{N}_{\vec{q}} + 1) - \bar{f}_{n;\vec{k_\bot}} \mathcal{N}_{\vec{q}}}{\mathcal{E}_{n';\vec{k_\bot}+\vec{q_\bot}} - \mathcal{E}_{n;\vec{k_\bot}} + \hbar \omega_{\vec{q}} - l\hbar r + i\hbar\delta} \right\} \quad (\omega_q = \omega_{-q})
+\end{align*}
+\begin{align*}
+S_2 &= \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C_{\vec{q}}|^2 |I_{n'n}(q_z)|^2 \sum_{k;l=-\infty} \exp(-ikrt) \sum_{n';k_\bot}\vec{k_\bot} J_{l+k} \left( \frac{-e\vec{E_0} \vec{q}}{m r^2} \right) J_l \left( \frac{e\vec{E_0} \vec{q}}{m r^2} \right) \\
+&\quad \times \left\{\frac{\bar{f}_{n;\vec{k_\bot}} (\mathcal{N}_{\vec{q}} + 1) + \bar{f}_{n';\vec{k_\bot}+\vec{q_\bot}} \mathcal{N}_{\vec{q}}}{\mathcal{E}_{n';\vec{k_\bot}+\vec{q_\bot}} - \mathcal{E}_{n;\vec{k_\bot}} + \hbar \omega_{\vec{q}} - l\hbar r + i\hbar\delta} \right\}
+\end{align*}
+
+
+We change $\vec{q}\to -\vec{q};;l\to -l$ (in the Bessel function)
+\begin{align*}
+\to S_2 &= - \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C_{\vec{q}}|^2 |I_{n'n}(q_z)|^2 \sum_{k;l} \exp(-ikrt) \sum_{n;k_\bot}\vec{k_\bot} J_{-l+k} \left( \frac{-e\vec{E_0} \vec{q_\bot}}{m r^2} \right) J_{-l} \left( \frac{e\vec{E_0} \vec{q_\bot}}{m r^2} \right) \\
+&\quad \times \left\{\frac{\bar{f}_{n;\vec{k_\bot}} \mathcal{N}_{\vec{q}} - \bar{f}_{n';\vec{k_\bot}+\vec{q_\bot}} (\mathcal{N}_{\vec{q}}+1)}{\mathcal{E}_{n';\vec{k_\bot}+\vec{q_\bot}} - \mathcal{E}_{n;\vec{k_\bot}} + \hbar \omega_{\vec{q}} - l\hbar r + i\hbar\delta} \right\}
+\end{align*}
+Using the Bassel function's properties:
+\begin{align*}
+    J_{-l} \left( \frac{-e\vec{E_0} \vec{q_\bot}}{m r^2} \right) &= J_l \left( \frac{e\vec{E_0} \vec{q_\bot}}{m r^2} \right)\\
+J_{-l+k} \left( \frac{-e\vec{E_0} \vec{q_\bot}}{m r^2} \right) &= J_{l-k} \left( \frac{e\vec{E_0} \vec{q_\bot}}{m r^2} \right)
+\end{align*}
+\begin{align*}
+    \to S_2 &= - \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C_{\vec{q}}|^2 |I_{n'n}(q_z)|^2 \sum_{k;l} \exp(-ikrt) \sum_{n;\vec{k_\bot}}\vec{k_\bot} J_{l-k} \left( \frac{e\vec{E_0} \vec{q}}{m r^2} \right) J_{l} \left( \frac{e\vec{E_0} \vec{q}}{m r^2} \right) \\
+&\quad \times \left\{\frac{\bar{f}_{n;\vec{k_\bot}} \mathcal{N}_{\vec{q}} - \bar{f}_{n';\vec{k_\bot}+\vec{q_\bot}} (\mathcal{N}_{\vec{q}}+1)}{\mathcal{E}_{n';\vec{k_\bot}+\vec{q_\bot}} - \mathcal{E}_{n;\vec{k_\bot}} + \hbar \omega_{\vec{q}} - l\hbar r + i\hbar\delta} \right\}
+\end{align*}
+\begin{align*}
+ S_3 &= \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C_{\vec{q}}|^2 |I_{n'n}(q_z)|^2 \sum_{k;l} \exp(-ikrt) \sum_{n;k_\bot}\vec{k_\bot} J_{k+l} \left( \frac{e\vec{E_0} \vec{q_\bot}}{m r^2} \right) J_{k} \left( \frac{e\vec{E_0} \vec{q_\bot}}{m r^2} \right) \\
+&\quad \times \left\{\frac{\bar{f}_{n';\vec{k_\bot}-\vec{q_\bot}} \mathcal{N}_{\vec{q}} - \bar{f}_{n;\vec{k_\bot}} (\mathcal{N}_{q}+1)}{\mathcal{E}_{n';\vec{k_\bot}-\vec{q_\bot}} - \mathcal{E}_{n;\vec{k_\bot}} + \hbar \omega_{\vec{q}} + l\hbar r - i\hbar\delta} \right\}
+\end{align*}
+Changing $\vec{q_\bot}\to -\vec{q_\bot}; \vec{l} \to -l$
+\begin{align*}
+ S_3 &= \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C_{\vec{q}}|^2 |I_{n'n}(q_z)|^2 \sum_{k;l} \exp(-ikrt) \sum_{n;k_\bot}k_\bot J_{l-k} \left( \frac{e\vec{E_0} \vec{q}}{m r^2} \right) J_{l} \left( \frac{e\vec{E_0} \vec{q}}{m r^2} \right) \\
+&\quad \times \left\{\frac{\bar{f}_{n';\vec{k_\bot}+\vec{q_\bot}} \mathcal{N}_{\vec{q}} - \bar{f}_{n;\vec{k_\bot}} (\mathcal{N}_{q}+1)}{\mathcal{E}_{n';\vec{k_\bot}+\vec{q_\bot}} - \mathcal{E}_{n;\vec{k_\bot}} + \hbar \omega_{\vec{q}} - l\hbar r - i\hbar\delta} \right\}
+\end{align*}
+\begin{align*}
+    SH_4 &= \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C(\vec{q})|^2 |I_{n'n}(q_z)|^2 \sum_{k;l} \exp(-i k r t) \sum_{n;\vec{k_\bot}}\vec{k_\bot} J_{k+l} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right) J_{l} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)\\&\times \left\{ \frac{\bar{f}_{n', \vec{k}_{\bot}-\vec{q}_{\bot}} (\mathcal{N}_{\vec{q}} + 1) - \bar{f}_{n, \vec{k}_{\bot}} \mathcal{N}_{\vec{q}}}{\mathcal{E}_{n', \vec{k}_{\bot}-\vec{q}_{\bot}} - \mathcal{E}_{n, \vec{k}_{\bot}} - \hbar \omega_{\vec{q}} + l \hbar \Omega - i \hbar \delta} \right\}
+\end{align*}
+Using the transformation as above: $(\vec{q}_{\bot} \rightarrow -\vec{q}_{\bot}) ; l \rightarrow -l$
+
+\begin{align*}
+    \to SH_4 &= \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C(\vec{q})|^2 |I_{n'n}(q_z)|^2 \sum_{n;\vec{l}} \exp(-i k r t) \sum_{n;\vec{k_\bot}}\vec{k_\bot} (-1)^l (-1)^{l+k} J_{k+l} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right) J_{l} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)\\
+    &\times \left\{ \frac{\bar{f}_{n', \vec{k}_{\bot}+\vec{q}_{\bot}} (\mathcal{N}_{\vec{q}} + 1) - \bar{f}_{n, \vec{k}_{\bot}} \mathcal{N}_{\vec{q}}}{\mathcal{E}_{n', \vec{k}_{\bot}+\vec{q}_{\bot}} - \mathcal{E}_{n, \vec{k}_{\bot}} + \hbar \omega_{\vec{q}} - l \hbar \Omega - i \hbar \delta} \right\}
+\end{align*}
+
+Using $$\frac{1}{\chi + i \delta}-\frac{1}{\chi - i \delta} = -2\pi i \hbar\delta(\chi)$$ 
+
+
+Apply it to get the sum of four terms, we can get:
+\begin{align*}
+    S_1 + S_4 &= \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C(\vec{q})|^2 |I_{n'n}(q_z)|^2 \sum_{k;l} \exp(-i k r t) \sum_{n,k_{\bot}} k_\bot (-1)^{k} J_{l+k} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right) J_{l} \left( \frac{e \vec{E_0} \vec{q_{\bot}}}{m r^2} \right) \\
+    &\times \left( \bar{f}_{n'; \vec{k}_{\bot}+\vec{q}_{\bot}} (\mathcal{N}_{\vec{q}} + 1) - \bar{f}_{n; \vec{k}_{\bot}} \mathcal{N}_{\vec{q}} \right) \times 2\pi i \hbar \delta \left( \mathcal{E}_{n'; \vec{k}_{\bot}+\vec{q}_{\bot}} - \mathcal{E}_{n; \vec{k}_{\bot}} + \hbar \omega_{\vec{q}} - l \hbar r\right)
+\end{align*}
+
+
+\begin{align*}
+S_2 + S_3 &= \sum_{n,n'} \sum_{\vec{q}_{\bot}} |C(\vec{q})|^2 |I_{n'n}(q_z)|^2 \sum_{k,l} \exp(-i k r t) \sum_{n;k_\bot} \vec{k_\bot} J_{l-k} \left( \frac{e \vec{E_0} \vec{q_{\bot}}}{m r^2} \right) J_{l} \left( \frac{e \vec{E_0} \vec{q_{\bot}}}{m r^2} \right)\\
+&\times \left( \bar{f}_{n'; \vec{k}_{\bot}+\vec{q}_{\bot}} \mathcal{N}_{\vec{q}} + \bar{f}_{n; \vec{k}_{\bot}} (\mathcal{N}_{\vec{q}} + 1) \right) \times 2\pi i \hbar \delta \left( \mathcal{E}_{n'; \vec{k}_{\bot}+\vec{q}} - \mathcal{E}_{n; \vec{k}_{\bot}} + \hbar \omega_q - l \hbar r \right)
+\end{align*}
+$S_1 + S_2 + S_3 + S_4$ and taking the only real part:
+\begin{align*}
+    \rightarrow SH_1+SH_2+SH_3+SH_4 &= \sum_{n;n'} \sum_{\vec{k_\bot};\vec{q_\bot}} |C(\vec{q})|^2 |I_{n'n}(q_z)|^2 \sum_{k;l} \vec{k}_1 J_{l} \left( \frac{e \vec{E_0} \vec{q_{\bot}}}{m r^2} \right) \\
+    &\left[ (-1)^{k} J_{l+k} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right) + J_{l-k} \left( \frac{e \vec{E_0} \vec{q_{\bot}}}{m r^2} \right) \right] 
+    \times (\bar{f}_{n'; \vec{k}_1+\vec{q}_{\bot}} - \bar{f}_{n; \vec{k}_1})(2\mathcal{N}_{\vec{q}}+1)\\& \times 2\pi \hbar \delta (\mathcal{E}_{n'; \vec{k}_\bot+\vec{q}_{\bot}} - \mathcal{E}_{n, \vec{k}_\bot} + \hbar \omega_{\vec{q}} - l \hbar r) \sin(k r t)
+\end{align*}
+\begin{align*}
+    \rightarrow \frac{e\hbar}{m} \sum_{n; \vec{k}_\bot} \vec{k}_\bot f_{n; \vec{k}_\bot} &= \frac{2\pi \hbar e}{m kr} \sum_{n;n'} \sum_{\vec{k}_\bot; \vec{q}_{\bot}} |C(\vec{q})|^2 |I_{n'n}(q_z)|^2 \sum_{k,l=-\infty} \vec{k}_\bot J_{l} \left( \frac{e \vec{E_0} \vec{q_{\bot}}}{m r^2} 
+    \right)\\ & \left[ (-1)^{k} J_{l+k} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right) + J_{l-k} \left( \frac{e \vec{E_0} \vec{q_{\bot}}}{m r^2} \right) \right]\times (\bar{f}_{n'; \vec{k}_\bot+\vec{q}_{\bot}} - \bar{f}_{n; \vec{k}_\bot}) (2\mathcal{N}_{\vec{q}} + 1) \delta\\
+    & (\mathcal{E}_{n'; \vec{k}_\bot+\vec{q}_{\bot}} - \mathcal{E}_{n; \vec{k}_\bot} + \hbar \omega_q - l \hbar r) \sin(k r t)
+\end{align*}
+
+The absorption coefficient's form:  
+\begin{align*}
+    \alpha &= \dfrac{8\pi}{c\sqrt{\chi_\infty}E_{0}^2}\left\langle\vec{J}(t) \vec{E_0}\sin{rt} \right\rangle_{t}\\
+    & = \dfrac{8\pi}{c\sqrt{\chi_\infty}E_{0}^2}\dfrac{1}{T}\int_{0}^{T}\vec{J}(t)\vec{E_0}\sin{rt} \quad dt
+\end{align*}
+Seeing that:
+\begin{align*}
+    \int_{0}^{T}\cos{rt} \sin{rt} \, dt &= 0\\
+    \int_{0}^T \sin{rt} \sin{k r t} \, dt &= \begin{cases}
+        0 \quad (k \pm 1) \\
+        \dfrac{T}{2} \quad (k = 1)
+    \end{cases}
+\end{align*}
+
+Therefore, the sum over $k$ only has meaning when $k=1$. We can get $\vec{J}(t)$
+
+\begin{align*}
+    \vec{J}(t) &= -\frac{e^2 \mathcal{N}_0 \vec{E}_0}{m r} \cos rt + \frac{2\pi \hbar e}{m k r} \sum_{n;n'} \sum_{\vec{k}_\bot; \vec{q}_\bot} |C(\vec{q})|^2 |I_{n'n}(q_z)|^2 \sum_{l=-\infty}^{\infty} \vec{k_\bot} J_l (-J_{l+1} + J_{l-1}) \\
+&\times (\bar{f}_{n'; \vec{k}_\bot+\vec{q}_\bot} - \bar{f}_{n; \vec{k}_\bot}) (2\mathcal{N}_{\vec{q}} + 1) \delta(\mathcal{E}_{n'; \vec{k}_\bot+\vec{q}_\bot} - \mathcal{E}_{n; \vec{k}_\bot} + \hbar \omega_q - l \hbar r) \sin rt
+\end{align*}
+
+With the interaction with the negative phonon, then $\hbar\omega\vec{q}=\hbar\omega_0$ can be ignored:
+
+\begin{align*}
+    \vec{J}(t) &= -\frac{e^2 \mathcal{N}_0 \vec{E}_0}{m r} \cos rt + \frac{2\pi \hbar e}{m k r} \sum_{n;n'} \sum_{\vec{k}_\bot; \vec{q}_\bot} |C(\vec{q})|^2 |I_{n'n}(q_z)|^2 \sum_{l=-\infty}^{\infty} \vec{k_\bot} J_l (J_{l+1} - J_{l-1}) \\
+&\times ( \bar{f}_{n; \vec{k}_\bot}-\bar{f}_{n'; \vec{k}_\bot+\vec{q}_\bot}) (2\mathcal{N}_{\vec{q}} + 1) \delta(\mathcal{E}_{n'; \vec{k}_\bot+\vec{q}_\bot} - \mathcal{E}_{n; \vec{k}_\bot} - l \hbar r) \sin rt
+\end{align*}
+We have that:
+
+\begin{align*}
+    \alpha &= \frac{8\pi}{c \sqrt{\chi_\infty} E_0^2} \left\langle \vec{J}(t) \vec{E}_0 \sin rt \right\rangle \\
+&= \frac{2\pi \hbar e}{m k r} \frac{8\pi \vec{E}_0}{c \sqrt{\chi_\infty} E_0^2} \sum_{n;n'} \sum_{\vec{k}_\bot, \vec{q}_\bot} |C(\vec{q})|^2 |I_{n'n}(q_z)| \sum_{l=-\infty}^{\infty} \vec{k_\bot}(\bar{f}_{n; \vec{k}_\bot} - \bar{f}_{n'; \vec{k}_\bot+\vec{q}_\bot}) (2\mathcal{N}_{\vec{q}} + 1)\\
+& J_l(J_{l+1} - J_{l-1}) \delta (\mathcal{E}_{n';\vec{k_\bot}+\vec{q_\bot}}-\mathcal{E}_{n;\vec{k_\bot}}-l\hbar r)
+\end{align*}
+
+Using the properties of Bassel function: 
+$$\left. \begin{aligned}
+J_{k+1} - J_{k-1} &= \frac{2k}{x} J_k(x) \\
+J_{k+1} - J_{k-1} &= -2 J'_k(x)
+\end{aligned} \right\} \rightarrow J_{k+1} = -J_{k-1} = \frac{2k}{x} J_k(x) \\$$
+
+$\mathcal{N}_{\vec{q}} \gg 1 \rightarrow 2\mathcal{N}_{\vec{q}} + 1 \approx 2\mathcal{N}_{\vec{q}}$ ; convert as $\vec{k_\bot}\to \vec{q_\bot}$
+
+
+%
+
+
+
+\begin{align*}
+    \rightarrow \alpha &= \frac{32 \pi^2 \hbar r}{c \sqrt{\chi_\infty} E_0^2} \sum_{n;n'} \sum_{\vec{k}_\bot; \vec{q}_\bot} |C(\vec{q})|^2 |I_{n'n}(q_z)|^2 \mathcal{N}_{\vec{q}} (\bar{f}_{n; \vec{k}_\bot} - \bar{f}_{n'; \vec{k}_\bot+\vec{q}_\bot}) \sum_{l=-\infty}^{\infty} l J_l^2 \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right) \\
+&\times \delta(\mathcal{E}_{n'; \vec{k}_\bot+\vec{q}_\bot} - \mathcal{E}_{n; \vec{k}_\bot} - l \hbar r)
+\end{align*}
+
+With the mechanism of the negative phonon's deffusal
+
+$$|C(\vec{q})|^2 = \frac{\hbar \xi 
+^2}{2 V \rho V_s} q ; \quad \mathcal{N}_{\vec{q}} = \frac{k_B T}{\hbar V_s q}$$
+With $V_s$ is the speed of the sound passing 
+
+\begin{align*}
+   \to \alpha &= \frac{16 \pi^2 \hbar \xi^2 r k_B T}{V \rho V_s^2 c \sqrt{\chi_\infty} E_0^2} \sum_{n;n'} \sum_{\vec{k}_\bot; \vec{q}_\bot} |I_{n'n}(q_z)|^2 (\bar{f}_{n; \vec{k}_\bot} - \bar{f}_{n'; \vec{k}_1+\vec{q}}) \sum_{l=-\infty}^{\infty} l J_l^2 \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right) \\
+&\times \delta(\mathcal{E}_{n'; \vec{k}_\bot+\vec{q}_\bot} - \mathcal{E}_{n; \vec{k}_\bot} - l \hbar r)
+\end{align*}
+
+We limit the approximation to $l=1; l=2$. Using the Bassel function:
+
+$$J_1^2(x) \approx \frac{x^2}{4} - \frac{x^4}{16}, \quad J_2^2(x) = \frac{x^4}{64}$$
+
+We transform:
+
+\begin{align*}
+    \mathcal{E}_{n';\vec{k_\bot}+\vec{q_\bot}}- \mathcal{E}_{n;k_\bot}-l\hbar r & = \mathcal{E}_{n'}+ \dfrac{\hbar^2(\vec{k_\bot}+\vec{q_\bot})^2}{2m}-\mathcal{E_n}-\dfrac{\hbar^2 k_\bot^2}{2m}-l\hbar r\\
+    & = \mathcal{E}_{n'} - \mathcal{E}_n + \dfrac{\hbar^2}{2m}\left( \vec{q_\bot}^2 + 2\vec{k_\bot}\vec{q_\bot} - l \hbar r\right)
+\end{align*}
+
+Putting: $D_{n';n,l} = \mathcal{E}_n'-\mathcal{E}_n - l\hbar r$
+
+\begin{align*}
+\alpha &= \frac{16 \pi^2 \hbar \xi^2 r k_B T}{V \rho V_s^2 c \sqrt{\chi_\infty} E_0^2} \sum_{n,n'} \sum_{\vec{k}_\bot; \vec{q}} |I_{n'n}(q_z)|^2 (\bar{f}_{n; \vec{k}_\bot} - \bar{f}_{n'; \vec{k}_\bot + \vec{q}_\bot}) \\
+&\quad \times \left\{ \left[ \frac{1}{4}  \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)^2  - \frac{1}{16} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)^4 \right] \times \delta \left( \mathcal{E}_{n'} - \mathcal{E}_n - \hbar r \right) \right. \\
+&\quad \left. + \frac{1}{32} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)^4 \delta \left( \mathcal{E}_{n'} - \mathcal{E}_n - 2\hbar r + \frac{\hbar^2}{2m} (q_\bot^2 + 2\vec{k}_\bot \vec{q}_\bot) \right) \right\} + \frac{\hbar^2}{2m} (q_\bot^2 + 2\vec{k}_\bot \vec{q}_\bot)
+\end{align*}
+
+Putting: $\Delta l = D_{n';n;l}+\dfrac{\hbar^2 \vec{q_\bot}^2}{2m}$
+
+\begin{align*}
+ \to \alpha &= \frac{16 \pi^2 \hbar \xi^2 r k_B T}{V \rho V_s^2 c \sqrt{\chi_\infty} E_0^2} \sum_{n;n'} \sum_{\vec{k}_\bot; \vec{q}} |I_{n'n}(q_z)|^2 (\bar{f}_{n; \vec{k}_\bot} - \bar{f}_{n'; \vec{k}_\bot + \vec{q}_\bot}) \\
+&\quad \times \left\{ \left[ \frac{1}{4}  \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)^2   - \frac{1}{16}  \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)^4 \right] \times \delta \left(\Delta_1 + \dfrac{\hbar^2 \vec{k_\bot} \vec{q_\bot}}{m} \right) \right. \\
+&\quad \left. + \frac{1}{32}\left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)^4 \delta \left(\Delta_2 + \dfrac{\hbar^2 \vec{k_\bot \vec{q_\bot}}}{m} \right)  \right\} 
+\end{align*}
+
+We put $D_l^\nu = \sum_{n;n'} \sum_{\vec{k_\bot}; \vec{q_\bot}} |I_{n'n}(q_z)|^2 (f_{n; k_\bot} - f_{n'; \vec{k_\bot}+\vec{q_\bot}})  \frac{(e \vec{E_0} \vec{q_\bot})^\nu}{m r^2}  \delta(\Delta_l + \frac{\hbar^2 \vec{k_\bot} \vec{q_\bot}}{m})$
+
+\begin{align*}
+    \rightarrow \alpha &= \frac{16 \pi^2 \hbar \xi^2 r k_B T}{V \rho V_s^2 c \sqrt{\chi_\infty} E_0^2 } \left\{ \left[ \frac{1}{4} D_1^2 - \frac{1}{16} D_1^4 \right] + \frac{1}{32} D_2^4 \right\} \\
+    &= \frac{\pi^2 \hbar \xi^2 r k_B T}{V \rho v_s^2 c \sqrt{\chi_\infty} E_0^2} \left\{ (4 D_1^2 - D_1^4) + \frac{1}{2} D_2^4 \right\}
+\end{align*}
+
+With absorption near the threshold: $| \hbar \omega_0 - l \hbar r \ll \bar{\mathcal{E}} |$, we use the equilibrium distribution function of electrons, the Boltzmann distribution function:
+$$\bar{f}_{n;\vec{k_\bot}} = n_0^* \exp{\left(-\dfrac{\mathcal{E}_{n;\vec{k_\bot}}}{k_B T} \right)} \quad \text{with} \quad n_0^*=\dfrac{n_0(e\pi)^3\hbar^3}{V_0(m k_B T)^{\frac{3}{2}}}$$
+
+In order to calculate $D_l^\nu$, we convert the sum into an integral: $$ \sum_{\vec{k_\bot}} \to \dfrac{1}{(2\pi)^2} \int_{-\infty}^{\infty} d k_\bot x \int_{-\infty}^{\infty} d k_\bot y $$
+
+Where we make the corresponding substitution $\vec{k_{\bot x}} \parallel k_\bot; \vec{k_{\bot y}}  \bot k_\bot$
+
+\begin{align*}
+    \rightarrow D_l^\nu &= \sum_{n; n'; \vec{q}} |I_{n'n}(q_z)|^2 n_0^* \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)^\nu \frac{1}{(2\pi)^2} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} dk_{\bot x} dk_{\bot y} \times \left\{ \exp \left[ - \frac{1}{k_B T} \left( \mathcal{E}_n + \frac{\hbar^2 k_\bot^2}{2m} \right) \right] \right. \\
+    &\quad \left. - \exp \left[ - \frac{1}{k_B T} \left( \mathcal{E}_{n'} + \frac{\hbar^2 k_\bot^2}{2m} + \frac{\hbar^2 \vec{k}_\bot \vec{q}_\bot}{m} + \frac{\hbar^2 q^2}{2m} \right) \right] \right\} \delta \left( \Delta_l + \frac{\hbar^2 \vec{k}_\bot \vec{q}_\bot}{m} \right)
+\end{align*}
+
+\begin{align*}
+    \text{With } & \begin{cases}
+        \mathcal{E}_n = \left( 2n + 1 + \frac{\sqrt{1 + 4\beta_z}}{2} \right) \hbar \omega_z \\
+        \mathcal{E}_{n'} = \left( 2n' + 1 + \frac{\sqrt{1 + 4\beta_z}}{2} \right) \hbar \omega_z
+    \end{cases}
+\end{align*}
+\begin{align*}
+    \rightarrow D_l^\nu &= \sum_{n; n'; \vec{q}} |I_{n'n}(q_z)|^2 \frac{1}{(2\pi)^2} \left( \frac{e \vec{E_0} \vec{q_\bot}}{m r^2} \right)^\nu n_0^* \left\{ \int_{-\infty}^{\infty} dk_{\bot x} \exp \left[ - \frac{1}{k_B T} \left( \mathcal{E}_n + \frac{\hbar^2 k_{\bot x}^2}{2m} \right) \right] \right. \\
+    & \left. \times \delta \left( \Delta_l + \frac{\hbar^2 k_{\bot x} q_\bot}{m} \right) \right. \int_{-\infty}^{\infty} dk_{\bot y} \exp \left( - \frac{\hbar^2 k_{\bot y}^2}{2m k_B T} \right) - \int_{-\infty}^{\infty} dk_{\bot y} \exp \left( - \frac{\hbar^2 k_{\bot y}^2}{2m k_B T} \right) \\
+    &\times \int_{-\infty}^{\infty} dk_{\bot x} \left[ - \frac{1}{k_B T} \left( \mathcal{E}_{n'} + \frac{\hbar^2 k_{\bot x}^2}{2m} + \frac{\hbar^2 k_{\bot x} }{m} + \frac{\hbar^2 q_\bot^2}{2m} \right) \right] \left. \delta \left( \Delta_l + \frac{\hbar^2 k_{\bot x} q}{m} \right) \right\}
+\end{align*}
+
+Applying: $$\int_{-\infty}^{\infty} \exp{-d x^2} dx = \sqrt{\dfrac{\pi}{a}} ; \int_{-\infty}^\infty f(x)\delta (x-x_0) dx = f(x_0) $$
+
+\begin{align*}
+&= \sum_{n; n';\vec{q_{\bot}}} |I_{n'n}(q_z)|^2 \frac{1}{(2\pi)^2} \left( \frac{e \vec{E}_0 \vec{q}_{\bot}}{m r^2} \right)^\nu n_0^* \left\{ \exp\left( -\frac{1}{k_B T} \mathcal{E}_n \right) \int_{-\infty}^{\infty} d k_{\bot x} \exp\left( -\frac{1}{k_B T} \frac{\hbar^2 k_{\bot x}^2}{2m} \right) \delta\left( \frac{\Delta l m}{\hbar^2 q_{\bot}} + k_{\bot x} \right) \right\} \\
+&\times \frac{m}{\hbar^2 q} \sqrt{\frac{2m \pi k_B T}{\hbar^2}} - \dfrac{m}{\hbar^2 q_\bot}\sqrt{\dfrac{2m \pi k_B T}{\hbar^2}} \exp\left[ -\frac{1}{k_B T} \left( \mathcal{E}_{n'} + \frac{\hbar^2 q_{\bot}^2}{2m} \right) \right] \\
+&\times \int_{-\infty}^{\infty} dk_{\bot x} \exp \left[\dfrac{-1}{k_B T}\left(\dfrac{\hbar^2 k_{\bot x}^2}{2m} + \dfrac{\hbar^2 k_{\bot x}}{m} \right) \right] \delta \dfrac{\Delta l m }{\hbar^2}+k_{\bot x} \\
+&= \sum_{n; n'; q_{\bot}} |I_{n'n}(q_z)|^2 \frac{1}{(2\pi)^2} \left( \frac{e \vec{E}_0 \vec{q}_{\bot}}{m r^2} \right) n_0^* \sqrt{\frac{2m \pi k_B T}{\hbar^2}} \frac{m}{\hbar^2 q_{\bot}}  \left\{ \exp\left[ -\frac{1}{k_B T} \left( \mathcal{E}_n + \frac{m \Delta l^2}{2 \hbar^2 q^2} \right) \right] \right.\\
+&- \left. \exp\left[ -\frac{1}{k_B T} \left( \mathcal{E}_{n'} + \frac{\hbar^2 q^2}{2m} + \frac{m \Delta l^2}{2 \hbar^2 q_{\bot}^2} - \Delta l \right) \right] \right\}
+\end{align*}
+
+
+\end{document}

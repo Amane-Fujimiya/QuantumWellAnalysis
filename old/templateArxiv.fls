@@ -1,6 +1,6 @@
-PWD e:\Code Repository\Archive I\QuantumW
+PWD e:\Core\Main Directory\Research_Deployment\R1\R1-2\old
 INPUT C:\Users\Admin\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\Code Repository\Archive I\QuantumW\templateArxiv.tex
+INPUT e:\Core\Main Directory\Research_Deployment\R1\R1-2\old\templateArxiv.tex
 OUTPUT templateArxiv.log
 INPUT D:\MikTek\tex\latex\base\article.cls
 INPUT D:\MikTek\tex\latex\base\article.cls
@@ -570,15 +570,25 @@ INPUT D:\MikTek\fonts\enc\dvips\cm-super\cm-super-t1.enc
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmbc8t.vf
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT D:\MikTek\fonts\vf\adobe\times\ptmb8t.vf
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmri8t.vf
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT D:\MikTek\fonts\vf\adobe\times\ptmb8t.vf
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmri8t.vf
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmr8t.vf
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmb8t.vf
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT D:\MikTek\fonts\tfm\public\cm\cmr8.tfm
+INPUT D:\MikTek\fonts\tfm\public\cm\cmmi8.tfm
+INPUT D:\MikTek\fonts\tfm\public\cm\cmsy8.tfm
+INPUT D:\MikTek\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT D:\MikTek\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT D:\MikTek\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT D:\MikTek\fonts\tfm\public\cm\cmbx8.tfm
+INPUT D:\MikTek\fonts\tfm\public\amsfonts\cmextra\cmmib8.tfm
+INPUT D:\MikTek\fonts\tfm\public\amsfonts\cmextra\cmbsy8.tfm
+INPUT C:\Users\Admin\AppData\Local\MiKTeX\fonts\tfm\public\stmaryrd\stmary8.tfm
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT D:\MikTek\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT D:\MikTek\fonts\vf\adobe\times\ptmr8t.vf
@@ -590,6 +600,8 @@ INPUT D:\MikTek\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT D:\MikTek\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT D:\MikTek\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT D:\MikTek\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT D:\MikTek\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT D:\MikTek\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT D:\MikTek\fonts\type1\public\amsfonts\cm\cmmi5.pfb
 INPUT D:\MikTek\fonts\type1\public\amsfonts\cm\cmmi5.pfb
 INPUT D:\MikTek\fonts\type1\public\amsfonts\cm\cmmi7.pfb
